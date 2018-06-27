@@ -1,0 +1,2 @@
+googletrans==2.3.0
+polib==1.1.0
