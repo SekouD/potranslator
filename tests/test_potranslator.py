@@ -11,20 +11,17 @@ from potranslator import potranslator
 from potranslator import cli
 
 
-@pytest.fixture
-def response():
-    """Sample pytest fixture.
+class TestPoTranslator:
+    translator = potranslator.PoTranslator(pot_dir='./test_data/pot_files', locale_dir='./test_data/locale')
 
-    See more at: http://doc.pytest.org/en/latest/fixture.html
-    """
-    # import requests
-    # return requests.get('https://github.com/audreyr/cookiecutter-pypackage')
-
-
-def test_content(response):
-    """Sample pytest test function with the pytest fixture as an argument."""
-    # from bs4 import BeautifulSoup
-    # assert 'GitHub' in BeautifulSoup(response.content).title.string
+    def test_translate(self):
+        test_file = './test_data/empty_test.po'
+        with pytest.raises(ValueError):
+            failed_translation = self.translator.translate(test_file, 'sp')
+        translation = self.translator.translate(test_file, 'es')
+        assert all([entry.msgstr != '' for entry in translation])
+        assert translation[0].msgstr == 'Créditos'
+        pass
 
 
 def test_command_line_interface():
