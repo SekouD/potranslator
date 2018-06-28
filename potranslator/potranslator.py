@@ -20,7 +20,7 @@ class PoTranslator:
     :param pot_dir:
     :param locale_dir:
     """
-    def __init__(self, pot_dir, locale_dir):
+    def __init__(self, pot_dir=None, locale_dir=None):
         self.pot_dir = pot_dir
         self.locale_dir = locale_dir
         self.translator = Translator()
@@ -45,3 +45,19 @@ class PoTranslator:
             pass
         po.save(file_name)
         print('The file {1} has been succesfully translated in {0} and saved.'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
+        return
+
+    def translate_all_locale(self, src_lang='auto', encoding='utf-8'):
+        """
+
+        :param src_lang:
+        :param encoding:
+        """
+        locales = listdir(self.locale_dir)
+        for locale in locales:
+            po_files = [file for file in listdir(join(self.locale_dir, locale, 'LC_MESSAGES')) if file.endswith('.po')]
+            for po_file in po_files:
+                path = join(self.locale_dir, locale, 'LC_MESSAGES', po_file)
+                self.translate(path, src_lang=src_lang, target_lang=locale, encoding=encoding)
+            pass
+        return
