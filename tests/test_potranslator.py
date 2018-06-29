@@ -61,7 +61,7 @@ class TestPoTranslator:
         modif_time = getmtime(self.test_po_file)
         translation = self.translator.translate(self.test_po_file, 'es', auto_save=True)
         last_modif_time = getmtime(self.test_po_file)
-        assert modif_time != last_modif_time
+        assert modif_time < last_modif_time
         return
 
     def test_translate_all_locale(self):
