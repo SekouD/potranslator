@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"POT-Creation-Date: 2018-06-29 23:13+0200\n"
+"PO-Revision-Date: 2018-06-29 23:13+0200\n"
+"Last-Translator: SekouD <sekoud.python@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Translated-By: potranslator 0.1.0\n"
+
+#: ./potranslator/potranslator.py:49
+msgid ""
+"potranslator could not auto-detect the desired translation language for the file {0}.\n"
+"Please provide a target language."
+msgstr ""
+"ਪਟਰਾਂਸਲੇਟਰ ਫਾਇਲ {0} ਲਈ ਲੋੜੀਦੀ ਟਰਾਂਸਲੇਸ਼ਨ ਭਾਸ਼ਾ ਨੂੰ ਸਵੈ-ਖੋਜ ਨਹੀਂ ਕਰ ਸਕਿਆ\n"
+"ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਨਿਸ਼ਾਨਾ ਭਾਸ਼ਾ ਪ੍ਰਦਾਨ ਕਰੋ"
+
+#: ./potranslator/potranslator.py:51
+msgid ""
+"Unsupported language. To see the list of supported languages type "
+"potranslator -h"
+msgstr "ਅਸਮਰਥਿਤ ਭਾਸ਼ਾ ਸਮਰਥਿਤ ਭਾਸ਼ਾਵਾਂ ਦੀ ਸੂਚੀ ਨੂੰ ਦੇਖਣ ਲਈ ਪਟਰਿਸ਼ਲੇਟਰ -h"
+
+#: ./potranslator/potranslator.py:54
+msgid "{0} translations for the file {1} have been succesfully retrieved"
+msgstr "{1} ਫਾਈਲ ਲਈ {0} ਅਨੁਵਾਦ ਸਫਲਤਾਪੂਰਵਕ ਪ੍ਰਾਪਤ ਕੀਤੇ ਗਏ ਹਨ"
+
+#: ./potranslator/potranslator.py:59
+msgid "The file {1} has been succesfully translated in {0} and saved."
+msgstr ""
+"{1} ਫਾਈਲ ਸਫਲਤਾਪੂਰਵਕ {0} ਵਿਚ ਅਨੁਵਾਦ ਕੀਤੀ ਗਈ ਹੈ ਅਤੇ ਸੁਰੱਖਿਅਤ ਕੀਤੀ ਗਈ ਹੈ."
+
+#: ./potranslator/potranslator.py:61
+msgid "The file {1} has been succesfully translated in {0}."
+msgstr "{0} ਵਿੱਚ ਫਾਈਲ {1} ਦਾ ਸਫਲਤਾਪੂਰਵਕ ਅਨੁਵਾਦ ਕੀਤਾ ਗਿਆ ਹੈ."
+
+#: ./potranslator/potranslator.py:75
+msgid ""
+"Attempting to translate the supported locales:\n"
+"{0}"
+msgstr ""
+"ਸਮਰਥਿਤ ਲੋਕੇਲਾਂ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼:\n"
+"{0}"
+
+#: ./potranslator/potranslator.py:77
+msgid ""
+"The following locales are not yet supported by potranslator and will not be translated:\n"
+"{0}"
+msgstr ""
+"ਹੇਠਲੇ ਲੋਕੇਲ ਪਲਾਟਰਸਲੇਟਰ ਦੁਆਰਾ ਅਜੇ ਤਕ ਸਮਰੱਥ ਨਹੀਂ ਹਨ ਅਤੇ ਅਨੁਵਾਦ ਨਹੀਂ ਕੀਤੇ ਜਾਣਗੇ:\n"
+"{0}"

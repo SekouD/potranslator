@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"POT-Creation-Date: 2018-06-29 23:13+0200\n"
+"PO-Revision-Date: 2018-06-29 23:13+0200\n"
+"Last-Translator: SekouD <sekoud.python@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Translated-By: potranslator 0.1.0\n"
+
+#: ./potranslator/potranslator.py:49
+msgid ""
+"potranslator could not auto-detect the desired translation language for the file {0}.\n"
+"Please provide a target language."
+msgstr ""
+"potranslator ဖိုင်ကို {0} များအတွက်ဆန္ဒရှိဘာသာပြန်ချက်ဘာသာစကား auto-detect နိုင်ဘူး။\n"
+"ပစ်မှတ်ဘာသာစကားသည်ပေးပါ။"
+
+#: ./potranslator/potranslator.py:51
+msgid ""
+"Unsupported language. To see the list of supported languages type "
+"potranslator -h"
+msgstr ""
+"မကိုက်ညီသည့်ဘာသာစကား။ ထောက်ခံဘာသာစကားများစာရင်းကိုကြည့်ဖို့ potranslator -h "
+"ရိုက်ထည့်"
+
+#: ./potranslator/potranslator.py:54
+msgid "{0} translations for the file {1} have been succesfully retrieved"
+msgstr "{0} ဖိုင်ကို {1} များအတွက်ဘာသာပြန်ချက်များကိုအောင်မြင်စွာထုတ်ယူခဲ့ကြ"
+
+#: ./potranslator/potranslator.py:59
+msgid "The file {1} has been succesfully translated in {0} and saved."
+msgstr "ဖိုင် {1} အောင်မြင်စွာ {0} အတွက်ဘာသာပြန်ထားသောနဲ့သိမ်းပြီးပါပြီ။"
+
+#: ./potranslator/potranslator.py:61
+msgid "The file {1} has been succesfully translated in {0}."
+msgstr "ဖိုင် {1} အောင်မြင်စွာ {0} အတွက်ဘာသာပြန်ထားသောခဲ့တာဖြစ်ပါတယ်။"
+
+#: ./potranslator/potranslator.py:75
+msgid ""
+"Attempting to translate the supported locales:\n"
+"{0}"
+msgstr ""
+"အဆိုပါထောက်ခံဒေသမူဘာသာပြန်ဆိုရန်ကြိုးစားနေ:\n"
+"{0}"
+
+#: ./potranslator/potranslator.py:77
+msgid ""
+"The following locales are not yet supported by potranslator and will not be translated:\n"
+"{0}"
+msgstr ""
+"အောက်ပါဒေသမူသေး potranslator ကထောက်ခံကြသည်မဟုတ်နှင့်ဘာသာပြန်ထားသောမည်မဟုတ်ပါ:\n"
+"{0}"

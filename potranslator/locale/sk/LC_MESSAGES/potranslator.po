@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"POT-Creation-Date: 2018-06-29 23:13+0200\n"
+"PO-Revision-Date: 2018-06-29 23:13+0200\n"
+"Last-Translator: SekouD <sekoud.python@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Translated-By: potranslator 0.1.0\n"
+
+#: ./potranslator/potranslator.py:49
+msgid ""
+"potranslator could not auto-detect the desired translation language for the file {0}.\n"
+"Please provide a target language."
+msgstr ""
+"prekladateľ nemohol automaticky detekovať požadovaný jazyk prekladania pre súbor {0}.\n"
+"Zadajte cieľový jazyk."
+
+#: ./potranslator/potranslator.py:51
+msgid ""
+"Unsupported language. To see the list of supported languages type "
+"potranslator -h"
+msgstr ""
+"Nepodporovaný jazyk. Pre zobrazenie zoznamu podporovaných jazykov zadajte "
+"prepranslator -h"
+
+#: ./potranslator/potranslator.py:54
+msgid "{0} translations for the file {1} have been succesfully retrieved"
+msgstr "Preklady {0} pre súbor {1} boli úspešne načítané"
+
+#: ./potranslator/potranslator.py:59
+msgid "The file {1} has been succesfully translated in {0} and saved."
+msgstr "Súbor {1} bol úspešne preložený do {0} a uložený."
+
+#: ./potranslator/potranslator.py:61
+msgid "The file {1} has been succesfully translated in {0}."
+msgstr "Súbor {1} sa úspešne preložil do {0}."
+
+#: ./potranslator/potranslator.py:75
+msgid ""
+"Attempting to translate the supported locales:\n"
+"{0}"
+msgstr ""
+"Pokus o preklad podporovaných lokalizácií:\n"
+"{0}"
+
+#: ./potranslator/potranslator.py:77
+msgid ""
+"The following locales are not yet supported by potranslator and will not be translated:\n"
+"{0}"
+msgstr ""
+"Nasledujúce lokalizácie zatiaľ nie sú podporované prekladačom a nebudú preložené:\n"
+"{0}"

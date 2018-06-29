@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"POT-Creation-Date: 2018-06-29 23:13+0200\n"
+"PO-Revision-Date: 2018-06-29 23:13+0200\n"
+"Last-Translator: SekouD <sekoud.python@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Translated-By: potranslator 0.1.0\n"
+
+#: ./potranslator/potranslator.py:49
+msgid ""
+"potranslator could not auto-detect the desired translation language for the file {0}.\n"
+"Please provide a target language."
+msgstr ""
+"פּאָטראַנסלאַטאָר קען נישט אַוטאָ-דעטעקט די געוואלט איבערזעצונג שפּראַך פֿאַר די טעקע {0}.\n"
+"ביטע צושטעלן אַ ציל שפּראַך."
+
+#: ./potranslator/potranslator.py:51
+msgid ""
+"Unsupported language. To see the list of supported languages type "
+"potranslator -h"
+msgstr ""
+"ונסאָפּפּאָרטעד שפּראַך. צו זען די רשימה פון שטיצט שפּראַכן טיפּ "
+"פּאָטראַנסלאַטאָר-ה"
+
+#: ./potranslator/potranslator.py:54
+msgid "{0} translations for the file {1} have been succesfully retrieved"
+msgstr "{0} איבערזעצונגען פֿאַר דער טעקע {1} זענען געשפענצט געווארן"
+
+#: ./potranslator/potranslator.py:59
+msgid "The file {1} has been succesfully translated in {0} and saved."
+msgstr "דער טעקע {1} איז הצלחה איבערגעזעצט אין {0} און געהאלפן."
+
+#: ./potranslator/potranslator.py:61
+msgid "The file {1} has been succesfully translated in {0}."
+msgstr "דער טעקע {1} איז הצלחה איבערגעזעצט אין {0}."
+
+#: ./potranslator/potranslator.py:75
+msgid ""
+"Attempting to translate the supported locales:\n"
+"{0}"
+msgstr ""
+"אַטעמפּטינג צו איבערזעצן די געשטיצט לאָקאַלעס:\n"
+"{0}"
+
+#: ./potranslator/potranslator.py:77
+msgid ""
+"The following locales are not yet supported by potranslator and will not be translated:\n"
+"{0}"
+msgstr ""
+"די פאלגענדע לאָקאַלס זענען נאָך נישט געשטיצט דורך פּאָטראַנסלאַטאָר און וועט נישט זיין איבערגעזעצט:\n"
+"{0}"
