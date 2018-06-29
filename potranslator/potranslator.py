@@ -6,7 +6,7 @@ from os import listdir
 from os.path import isfile, join
 from . import polib, Translator, pkg_resources, json
 from copy import deepcopy
-
+from codecs import open
 
 _RESOURCE_PACKAGE = __name__
 
