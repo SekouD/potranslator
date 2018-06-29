@@ -12,10 +12,10 @@ from potranslator import cli
 
 
 class TestPoTranslator:
-    translator = potranslator.PoTranslator(pot_dir='./test_data/pot_files', locale_dir='./test_data/locale')
+    translator = potranslator.PoTranslator(pot_dir='./tests/test_data/pot_files', locale_dir='./tests/test_data/locale')
 
     def test_translate(self):
-        test_file = './test_data/empty_test.po'
+        test_file = './tests/test_data/empty_test.po'
         with pytest.raises(ValueError):
             failed_translation = self.translator.translate(test_file, 'sp')
         translation = self.translator.translate(test_file, 'es')
