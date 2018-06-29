@@ -47,7 +47,7 @@ class PoTranslator:
         if target_lang == 'auto':
             try:
                 target_lang = po.metadata['Language']
-            except AttributeError:
+            except KeyError:
                 raise ValueError('potranslator could not auto-detect the desired translation language for the file {0}.\nPlease provide a target language.'.format(file_name))
         if target_lang not in _SUPPORTED_LANGUAGES:
             raise ValueError('Unsupported language. To see the list of supported languages type potranslator -h')
