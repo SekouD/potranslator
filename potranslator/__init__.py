@@ -27,8 +27,6 @@ with open(json_file, 'r', encoding='utf-8') as file:
 
 _TRANSLATED_LANGUAGES = [key for key in SUPPORTED_LANGUAGES if key != 'en']
 
-from .potranslator import PoTranslator
-
 
 def _get_user_locale():
     """
@@ -86,3 +84,5 @@ _POTRANSLATOR_TRANSLATIONS.install()
 
 # Replaces the getdoc method
 inspect.getdoc = _getdoc
+
+from .potranslator import PoTranslator
