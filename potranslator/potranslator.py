@@ -2,10 +2,10 @@
 
 """Main module."""
 
-from os import listdir
-from os.path import isfile, join
+from os import listdir, makedirs
+from os.path import isfile, join, exists
 from . import polib, Translator, pkg_resources, json
-from potranslator import SUPPORTED_LANGUAGES
+from potranslator import SUPPORTED_LANGUAGES, __version__
 from collections import defaultdict
 from copy import deepcopy
 from codecs import open
@@ -54,6 +54,7 @@ class PoTranslator:
         print(_('{0} translations for the file {1} have been succesfully retrieved').format(SUPPORTED_LANGUAGES[target_lang], file_name))
         for entry, translation in zip(untranslated, translations):
             entry.msgstr = translation.text
+        po.metadata['Translated-By'] = 'potranslator {0}'.format(__version__)
         if auto_save:
             po.save(file_name)
             print(_('The file {1} has been succesfully translated in {0} and saved.').format(SUPPORTED_LANGUAGES[target_lang], file_name))
@@ -98,7 +99,10 @@ class PoTranslator:
         for target_lang in target_langs:
             po_file_name = filename.split('/')[-1].split('\\')[-1][:-1]
             po_path = join(self.locale_dir, '/'.join((target_lang, 'LC_MESSAGES', po_file_name)))
+            po_dir = join(self.locale_dir, '/'.join((target_lang, 'LC_MESSAGES')))
             if not isfile(po_path):
+                if not exists(po_dir):
+                    makedirs(po_dir)
                 po = deepcopy(pot)
                 po.save(po_path)
             results[target_lang] = self.translate(po_path, target_lang=target_lang, src_lang=src_lang, encoding=encoding, auto_save=auto_save)
