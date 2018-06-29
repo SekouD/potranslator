@@ -5,6 +5,7 @@
 from os import listdir
 from os.path import isfile, join
 from . import polib, Translator, pkg_resources, json
+from collections import defaultdict
 from copy import deepcopy
 from codecs import open
 import sys
@@ -14,6 +15,7 @@ _RESOURCE_PACKAGE = __name__
 is_python2 = sys.version_info < (3, 0)
 
 json_file = pkg_resources.resource_filename(_RESOURCE_PACKAGE, 'supported_languages.json')
+
 with open(json_file, 'r', encoding='utf-8') as file:
     _SUPPORTED_LANGUAGES = json.load(file)
 
@@ -30,13 +32,16 @@ class PoTranslator:
         self.translator = Translator()
         return
 
-    def translate(self, file_name, target_lang='auto', src_lang='auto', encoding='utf-8'):
+    def translate(self, file_name, target_lang='auto', src_lang='auto', encoding='utf-8', auto_save=False):
         """
+
 
         :param file_name:
         :param target_lang:
         :param src_lang:
         :param encoding:
+        :param auto_save:
+        :return: POFile.
         """
         po = polib.pofile(file_name, encoding=encoding)
         if target_lang == 'auto':
@@ -51,16 +56,20 @@ class PoTranslator:
         print('{0} translations for the file {1} have been succesfully retrieved'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
         for entry, translation in zip(untranslated, translations):
             entry.msgstr = translation.text
-            pass
-        po.save(file_name)
-        print('The file {1} has been succesfully translated in {0} and saved.'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
+        if auto_save:
+            po.save(file_name)
+            print('The file {1} has been succesfully translated in {0} and saved.'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
+        else:
+            print('The file {1} has been succesfully translated in {0}.'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
         return po
 
-    def translate_all_locale(self, src_lang='auto', encoding='utf-8'):
+    def translate_all_locale(self, src_lang='auto', encoding='utf-8', auto_save=False):
         """
 
         :param src_lang:
         :param encoding:
+        :param auto_save:
+        :return: Dictionary.
         """
         all_locales = listdir(self.locale_dir)
         locales = [locale for locale in all_locales if locale in _SUPPORTED_LANGUAGES]
@@ -68,43 +77,47 @@ class PoTranslator:
         print('Attempting to translate the supported locales:\n{0}'.format(', '.join(locales)))
         if unsupported_locales:
             print('The following locales are not yet supported by potranslator and will not be translated:\n{0}'.format(', '.join(locales)))
+        results = defaultdict(dict)
         for locale in locales:
             po_files = [file for file in listdir(join(self.locale_dir, locale, 'LC_MESSAGES')) if file.endswith('.po')]
             for po_file in po_files:
                 path = join(self.locale_dir, locale, 'LC_MESSAGES', po_file)
-                self.translate(path, src_lang=src_lang, target_lang=locale, encoding=encoding)
-            pass
-        return
+                results[locale][po_file] = self.translate(path, src_lang=src_lang, target_lang=locale, encoding=encoding, auto_save=auto_save)
+        return results
 
-    def translate_from_pot(self, filename, target_langs, src_lang='auto', encoding='utf-8'):
+    def translate_from_pot(self, filename, target_langs, src_lang='auto', encoding='utf-8', auto_save=False):
         """
 
         :param filename:
         :param target_langs:
         :param src_lang:
         :param encoding:
+        :param auto_save:
+        :return: Dictionary.
         """
         pot = polib.pofile(filename, encoding=encoding)
+        results = {}
         for target_lang in target_langs:
             po_file_name = filename.split('/')[-1].split('\\')[-1][:-1]
             po_path = join(self.locale_dir, '/'.join((target_lang, 'LC_MESSAGES', po_file_name)))
             if not isfile(po_path):
                 po = deepcopy(pot)
                 po.save(po_path)
-            self.translate(po_path, target_lang=target_lang, src_lang=src_lang, encoding=encoding)
-            pass
-        return
+            results[target_lang] = self.translate(po_path, target_lang=target_lang, src_lang=src_lang, encoding=encoding, auto_save=auto_save)
+        return results
 
-    def translate_all_pot(self, target_langs, src_lang='auto', encoding='utf-8'):
+    def translate_all_pot(self, target_langs, src_lang='auto', encoding='utf-8', auto_save=False):
         """
 
         :param target_langs:
         :param src_lang:
         :param encoding:
+        :param auto_save:
+        :return: Dictionary.
         """
         pot_files = [file for file in listdir(self.pot_dir) if file.endswith('.pot')]
+        results = {}
         for pot_file in pot_files:
             path = join(self.pot_dir, pot_file)
-            self.translate_from_pot(path, target_langs=target_langs, src_lang=src_lang, encoding=encoding)
-            pass
-        return
+            results[pot_file] = self.translate_from_pot(path, target_langs=target_langs, src_lang=src_lang, encoding=encoding, auto_save=auto_save)
+        return results
