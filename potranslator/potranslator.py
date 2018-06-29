@@ -5,6 +5,7 @@
 from os import listdir
 from os.path import isfile, join
 from . import polib, Translator, pkg_resources, json
+from potranslator import SUPPORTED_LANGUAGES
 from collections import defaultdict
 from copy import deepcopy
 from codecs import open
@@ -14,10 +15,7 @@ _RESOURCE_PACKAGE = __name__
 
 is_python2 = sys.version_info < (3, 0)
 
-json_file = pkg_resources.resource_filename(_RESOURCE_PACKAGE, 'supported_languages.json')
 
-with open(json_file, 'r', encoding='utf-8') as file:
-    _SUPPORTED_LANGUAGES = json.load(file)
 
 
 class PoTranslator:
@@ -49,18 +47,18 @@ class PoTranslator:
                 target_lang = po.metadata['Language']
             except KeyError:
                 raise ValueError('potranslator could not auto-detect the desired translation language for the file {0}.\nPlease provide a target language.'.format(file_name))
-        if target_lang not in _SUPPORTED_LANGUAGES:
+        if target_lang not in SUPPORTED_LANGUAGES:
             raise ValueError('Unsupported language. To see the list of supported languages type potranslator -h')
         untranslated = [elmt for elmt in po if elmt.msgstr == '' and not elmt.obsolete]
         translations = self.translator.translate([elmt.msgid for elmt in untranslated], src=src_lang, dest=target_lang)
-        print('{0} translations for the file {1} have been succesfully retrieved'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
+        print('{0} translations for the file {1} have been succesfully retrieved'.format(SUPPORTED_LANGUAGES[target_lang], file_name))
         for entry, translation in zip(untranslated, translations):
             entry.msgstr = translation.text
         if auto_save:
             po.save(file_name)
-            print('The file {1} has been succesfully translated in {0} and saved.'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
+            print('The file {1} has been succesfully translated in {0} and saved.'.format(SUPPORTED_LANGUAGES[target_lang], file_name))
         else:
-            print('The file {1} has been succesfully translated in {0}.'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
+            print('The file {1} has been succesfully translated in {0}.'.format(SUPPORTED_LANGUAGES[target_lang], file_name))
         return po
 
     def translate_all_locale(self, src_lang='auto', encoding='utf-8', auto_save=False):
@@ -72,8 +70,8 @@ class PoTranslator:
         :return: Dictionary.
         """
         all_locales = listdir(self.locale_dir)
-        locales = [locale for locale in all_locales if locale in _SUPPORTED_LANGUAGES]
-        unsupported_locales = [locale for locale in all_locales if locale not in _SUPPORTED_LANGUAGES]
+        locales = [locale for locale in all_locales if locale in SUPPORTED_LANGUAGES]
+        unsupported_locales = [locale for locale in all_locales if locale not in SUPPORTED_LANGUAGES]
         print('Attempting to translate the supported locales:\n{0}'.format(', '.join(locales)))
         if unsupported_locales:
             print('The following locales are not yet supported by potranslator and will not be translated:\n{0}'.format(', '.join(locales)))
