@@ -5,7 +5,7 @@
 
 import pytest
 import sys
-from os.path import isfile, join
+from os.path import isfile, join, getmtime
 from os import remove
 
 from click.testing import CliRunner
@@ -43,8 +43,11 @@ class TestPoTranslator:
         return
 
     def test_translate_auto_save(self):
+        modif_time = getmtime(self.test_po_file)
         translation = self.translator.translate(self.test_po_file, 'es', auto_save=True)
-        assert isfile(self.test_po_file)
+        last_modif_time = getmtime(self.test_po_file)
+        assert modif_time != last_modif_time
+        return
 
     def test_translate_all_locale(self):
         translations = self.translator.translate_all_locale()
