@@ -74,13 +74,13 @@ def _getdoc(object):
 _user_locale = _get_user_locale()
 
 if _user_locale in _TRANSLATED_LANGUAGES:
-    _MLCONJUG_TRANSLATIONS = gettext.translation(domain='mlconjug',
+    _POTRANSLATOR_TRANSLATIONS = gettext.translation(domain='mlconjug',
                                                 localedir=_TRANSLATIONS_PATH,
                                                 languages=[_user_locale], fallback=True, codeset='UTF-8')
 else:
-    _MLCONJUG_TRANSLATIONS = gettext.NullTranslations()
+    _POTRANSLATOR_TRANSLATIONS = gettext.NullTranslations()
 
-_MLCONJUG_TRANSLATIONS.install()
+_POTRANSLATOR_TRANSLATIONS.install()
 
 
 # Replaces the getdoc method
