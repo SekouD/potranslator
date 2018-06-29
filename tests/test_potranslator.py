@@ -23,11 +23,8 @@ class TestPoTranslator:
             failed_translation = self.translator.translate(test_file, 'sp')
         translation = self.translator.translate(test_file, 'es')
         assert all([entry.msgstr != '' for entry in translation])
-        if not is_python2:
-            assert translation[0].msgstr == 'Créditos'
-        else:
-            assert translation[0].msgstr.encode('utf-8') == 'Créditos'
-        pass
+        assert translation[0].msgstr == 'Créditos'
+        return
 
 
 def test_command_line_interface():

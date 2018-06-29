@@ -7,8 +7,11 @@ from os.path import isfile, join
 from . import polib, Translator, pkg_resources, json
 from copy import deepcopy
 from codecs import open
+import sys
 
 _RESOURCE_PACKAGE = __name__
+
+is_python2 = sys.version_info < (3, 0)
 
 json_file = pkg_resources.resource_filename(_RESOURCE_PACKAGE, 'supported_languages.json')
 with open(json_file, 'r', encoding='utf-8') as file:
@@ -47,7 +50,10 @@ class PoTranslator:
         translations = self.translator.translate([elmt.msgid for elmt in untranslated], src=src_lang, dest=target_lang)
         print('{0} translations for the file {1} have been succesfully retrieved'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
         for entry, translation in zip(untranslated, translations):
-            entry.msgstr = translation.text
+            if is_python2:
+                entry.msgstr = translation.text.encode('utf-8')
+            else:
+                entry.msgstr = translation.text
             pass
         po.save(file_name)
         print('The file {1} has been succesfully translated in {0} and saved.'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
