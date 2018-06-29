@@ -4,12 +4,15 @@
 """Tests for `potranslator` package."""
 
 import pytest
+import sys
 
 from click.testing import CliRunner
 
 from potranslator import potranslator
 from potranslator import cli
 
+
+is_python2 = sys.version_info < (3, 0)
 
 class TestPoTranslator:
     translator = potranslator.PoTranslator(pot_dir='./tests/test_data/pot_files', locale_dir='./tests/test_data/locale')
@@ -20,7 +23,10 @@ class TestPoTranslator:
             failed_translation = self.translator.translate(test_file, 'sp')
         translation = self.translator.translate(test_file, 'es')
         assert all([entry.msgstr != '' for entry in translation])
-        assert translation[0].msgstr.encode('utf-8') == 'Créditos'.encode('utf-8')
+        if not is_python2:
+            assert translation[0].msgstr == 'Créditos'
+        else:
+            assert translation[0].msgstr.encode('utf-8') == 'Créditos'
         pass
 
 
