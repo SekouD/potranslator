@@ -34,4 +34,3 @@ msgstr ""
 #: ../../../AUTHORS.rst:13
 msgid "None yet. Why not be the first?"
 msgstr ""
-
