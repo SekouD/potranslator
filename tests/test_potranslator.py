@@ -20,7 +20,7 @@ class TestPoTranslator:
             failed_translation = self.translator.translate(test_file, 'sp')
         translation = self.translator.translate(test_file, 'es')
         assert all([entry.msgstr != '' for entry in translation])
-        assert translation[0].msgstr == 'Créditos'
+        assert translation[0].msgstr.encode('utf-8') == 'Créditos'.encode('utf-8')
         pass
 
 
