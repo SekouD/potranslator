@@ -15,7 +15,7 @@ from potranslator import cli
 is_python2 = sys.version_info < (3, 0)
 
 class TestPoTranslator:
-    translator = potranslator.PoTranslator(pot_dir='./tests/test_data/pot_files', locale_dir='./tests/test_data/locale')
+    translator = potranslator.PoTranslator(pot_dir='./tests/test_data/test_pot_files', locale_dir='./tests/test_data/locale')
 
     def test_translate(self):
         test_file = './tests/test_data/empty_test.po'
