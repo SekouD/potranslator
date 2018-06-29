@@ -14,6 +14,7 @@ import platform
 from locale import windows_locale, getdefaultlocale
 import gettext
 import inspect
+from codecs import open
 
 # Sets up the automatic translation of annotated strings displayed to the user.
 _RESOURCE_PACKAGE = __name__
