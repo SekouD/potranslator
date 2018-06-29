@@ -50,10 +50,7 @@ class PoTranslator:
         translations = self.translator.translate([elmt.msgid for elmt in untranslated], src=src_lang, dest=target_lang)
         print('{0} translations for the file {1} have been succesfully retrieved'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
         for entry, translation in zip(untranslated, translations):
-            if is_python2:
-                entry.msgstr = translation.text.encode('utf-8')
-            else:
-                entry.msgstr = translation.text
+            entry.msgstr = translation.text
             pass
         po.save(file_name)
         print('The file {1} has been succesfully translated in {0} and saved.'.format(_SUPPORTED_LANGUAGES[target_lang], file_name))
