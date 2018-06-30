@@ -7,5 +7,5 @@ is_python2 = sys.version_info < (3, 0)
 
 if __name__ == '__main__':
     if not is_python2:
-        rc = call('mypy --strict --ignore-missing-imports ./potranslator/')
+        rc = call('mypy --strict --ignore-missing-imports {toxinidir}/potranslator/')
         raise SystemExit(rc)
