@@ -27,7 +27,7 @@ potranslator
         :target: https://codecov.io/gh/SekouD/potranslator.
         :alt: Code Coverage Status
 
-.. image:: https://snyk.io/test/github/SekouD/potranslator?targetFile=requirements.txt
+.. image:: https://snyk.io/test/github/SekouD/potranslator/badge.svg?targetFile=requirements.txt
         :target: https://snyk.io/test/github/SekouD/potranslator?targetFile=requirements.txt
         :alt: Code Vulnerability Status
 
