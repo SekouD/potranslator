@@ -20,7 +20,6 @@ setup_requirements = ['pytest-runner', ]
 
 test_requirements = ['pip==10.0.1',
                      'pytest==3.6.2',
-                     'mypy==0.610',
                      'pytest-runner==4.2',
                      'Click>=6.0',
                      'bump2version==0.5.8',
