@@ -1,5 +1,5 @@
 Welcome to potranslator's documentation!
-======================================
+========================================
 
 .. toctree::
    :maxdepth: 2
