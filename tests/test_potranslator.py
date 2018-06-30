@@ -10,14 +10,14 @@ from os import remove
 
 from click.testing import CliRunner
 
-from potranslator import potranslator
+from potranslator import PoTranslator
 from potranslator import cli
 
 
 is_python2 = sys.version_info < (3, 0)
 
 class TestPoTranslator:
-    translator = potranslator.PoTranslator(pot_dir='./tests/test_data/test_pot_files', locale_dir='./tests/test_data/locale')
+    translator = PoTranslator(pot_dir='./tests/test_data/test_pot_files', locale_dir='./tests/test_data/locale')
     test_po_file = './tests/test_data/empty_test.po'
     test_pot_file = './tests/test_data/test_pot_files/test-usage.pot'
     test_languages = ('es', 'fr', 'it', 'pt', 'ro')
