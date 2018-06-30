@@ -11,11 +11,28 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=6.0', ]
+requirements = ['Click>=6.0',
+                'googletrans==2.3.0',
+                'polib==1.1.0',
+                ]
 
 setup_requirements = ['pytest-runner', ]
 
-test_requirements = ['pytest', ]
+test_requirements = ['pip==10.0.1',
+                     'pytest==3.6.2',
+                     'pytest-runner==4.2',
+                     'Click>=6.0',
+                     'bump2version==0.5.8',
+                     'wheel==0.31.1',
+                     'watchdog==0.8.3',
+                     'flake8==3.5.0',
+                     'tox==3.0.0',
+                     'coverage==4.5.1',
+                     'Sphinx==1.7.5',
+                     'twine==1.11.0',
+                     'googletrans==2.3.0',
+                     'polib==1.1.0',
+                     ]
 
 setup(
     author="SekouD",
@@ -42,6 +59,8 @@ setup(
     license="MIT license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
+    package_data={'translations': ['potranslator/locale/*'],
+                  'type_stubs': ['potranslator/py.typed', 'potranslator/*']},
     keywords='potranslator',
     name='potranslator',
     packages=find_packages(include=['potranslator']),
