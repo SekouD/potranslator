@@ -5,11 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: MLConjug 2.1.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 11:51+0200\n"
 "PO-Revision-Date: 2018-06-16 22:18+0200\n"
-"Last-Translator: SekouD <sekoud.python@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -25,10 +23,6 @@ msgstr "Créditos"
 #: ../../../AUTHORS.rst:6
 msgid "Development Lead"
 msgstr "Líder de desarrollo"
-
-#: ../../../AUTHORS.rst:8
-msgid "SekouD <sekoud.python@gmail.com>"
-msgstr "SekouD <sekoud.python@gmail.com>"
 
 #: ../../../AUTHORS.rst:11
 msgid "Contributors"
