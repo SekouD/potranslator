@@ -58,7 +58,7 @@ setup(
     description="A package to easily translate po and pot files in any language supported by Google Translate.",
     entry_points={
         'console_scripts': [
-            'potranslator=potranslator.cli:main',
+            'potranslator=potranslator.commands:main',
         ],
     },
     install_requires=requirements,
