@@ -11,7 +11,7 @@ from os import remove
 from click.testing import CliRunner
 
 from potranslator import PoTranslator
-from potranslator import cli
+from potranslator import cli, commands
 
 
 is_python2 = sys.version_info < (3, 0)
@@ -118,9 +118,9 @@ class TestPoTranslator:
 def test_command_line_interface():
     """Test the CLI."""
     runner = CliRunner()
-    result = runner.invoke(cli.main)
+    result = runner.invoke(commands.main)
     assert result.exit_code == 0
-    assert 'potranslator.cli.main' in result.output
-    help_result = runner.invoke(cli.main, ['--help'])
+    assert 'POTRANSLATOR_<UPPER_LONG_NAME>' in result.output
+    help_result = runner.invoke(commands.main, ['--help'])
     assert help_result.exit_code == 0
-    assert '--help  Show this message and exit.' in help_result.output
+    assert 'All command-line options can be set' in help_result.output
