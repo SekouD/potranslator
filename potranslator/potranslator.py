@@ -20,9 +20,12 @@ is_python2 = sys.version_info < (3, 0)
 
 class PoTranslator:
     """
+    This is the main class of this library. This class manages all translation tasks.
 
-    :param pot_dir:
-    :param locale_dir:
+    :param pot_dir: string.
+        Path to the pot directory.
+    :param locale_dir: string.
+        Path to the locale directory.
     """
     def __init__(self, pot_dir=None, locale_dir=None):
         self.pot_dir = pot_dir
@@ -32,15 +35,22 @@ class PoTranslator:
 
     def translate(self, file_name, target_lang='auto', src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
         """
+        Translates the given po file in the specified target language.
 
-
-        :param file_name:
-        :param target_lang:
-        :param src_lang:
-        :param encoding:
-        :param auto_save:
-        :param compiled:
+        :param file_name: string.
+            Path to the filename of the file to translate.
+        :param target_lang: string.
+            Target language for translation.
+        :param src_lang: string.
+            Source language for translation.
+        :param encoding: string.
+            Encoding for saving the po files.
+        :param auto_save: bool.
+            Toggles auto save feature.
+        :param compiled: bool.
+            Toggles compilation to mo files.
         :return: POFile.
+            The translated version of the original catalog.
         """
         po = polib.pofile(file_name, encoding=encoding)
         if target_lang == 'auto':
@@ -68,11 +78,16 @@ class PoTranslator:
     def translate_all_locale(self, src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
         """
 
-        :param src_lang:
-        :param encoding:
-        :param auto_save:
-        :param compiled:
+        :param src_lang: string.
+            Source language for translation.
+        :param encoding: string.
+            Encoding for saving the po files.
+        :param auto_save: bool.
+            Toggles auto save feature.
+        :param compiled: bool.
+            Toggles compilation to mo files.
         :return: Dictionary.
+            A dictionary of po files.
         """
         all_locales = listdir(self.locale_dir)
         locales = [locale for locale in all_locales if locale in SUPPORTED_LANGUAGES]
@@ -91,13 +106,20 @@ class PoTranslator:
     def translate_from_pot(self, filename, target_langs, src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
         """
 
-        :param filename:
-        :param target_langs:
-        :param src_lang:
-        :param encoding:
-        :param auto_save:
-        :param compiled:
+        :param filename: string.
+            Path to the filename of the file to translate.
+        :param target_langs: sequence of strings.
+            Target language for translation.
+        :param src_lang: string.
+            Source language for translation.
+        :param encoding: string.
+            Encoding for saving the po files.
+        :param auto_save: bool.
+            Toggles auto save feature.
+        :param compiled: bool.
+            Toggles compilation to mo files.
         :return: Dictionary.
+            A dictionary of po files.
         """
         pot = polib.pofile(filename, encoding=encoding)
         results = {}
@@ -116,12 +138,18 @@ class PoTranslator:
     def translate_all_pot(self, target_langs, src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
         """
 
-        :param target_langs:
-        :param src_lang:
-        :param encoding:
-        :param auto_save:
-        :param compiled:
+        :param target_langs: sequence of strings.
+            Target language for translation.
+        :param src_lang: string.
+            Source language for translation.
+        :param encoding: string.
+            Encoding for saving the po files.
+        :param auto_save: bool.
+            Toggles auto save feature.
+        :param compiled: bool.
+            Toggles compilation to mo files.
         :return: Dictionary.
+            A dictionary of po files.
         """
         pot_files = [file for file in listdir(self.pot_dir) if file.endswith('.pot')]
         results = {}
