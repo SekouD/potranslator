@@ -1,0 +1,4 @@
+[report]
+omit =
+    /potranslator/pycompat.py
+    setup.py
