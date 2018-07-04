@@ -34,6 +34,12 @@ test_requirements = ['pip==10.0.1',
                      'polib==1.1.0',
                      ]
 
+extras_require = {
+    'transifex': [
+        'transifex_client>=0.13.4'
+    ],
+}
+
 setup(
     author="SekouD",
     author_email='sekoud.python@gmail.com',
