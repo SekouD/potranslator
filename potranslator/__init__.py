@@ -78,7 +78,7 @@ def _getdoc(object):
 _user_locale = _get_user_locale()
 
 if _user_locale in _TRANSLATED_LANGUAGES:
-    _POTRANSLATOR_TRANSLATIONS = gettext.translation(domain='mlconjug',
+    _POTRANSLATOR_TRANSLATIONS = gettext.translation(domain='potranslator',
                                                 localedir=_TRANSLATIONS_PATH,
                                                 languages=[_user_locale], fallback=True, codeset='UTF-8')
 else:
