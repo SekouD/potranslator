@@ -30,7 +30,7 @@ class PoTranslator:
         self.translator = Translator()
         return
 
-    def translate(self, file_name, target_lang='auto', src_lang='auto', encoding='utf-8', auto_save=False):
+    def translate(self, file_name, target_lang='auto', src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
         """
 
 
@@ -39,6 +39,7 @@ class PoTranslator:
         :param src_lang:
         :param encoding:
         :param auto_save:
+        :param compiled:
         :return: POFile.
         """
         po = polib.pofile(file_name, encoding=encoding)
@@ -57,18 +58,20 @@ class PoTranslator:
         po.metadata['Translated-By'] = 'potranslator {0}'.format(__version__)
         if auto_save:
             po.save(file_name)
+        if compiled:
             po.save_as_mofile(file_name.replace('.po', '.mo'))
             print(_('The file {1} has been succesfully translated in {0} and saved.').format(SUPPORTED_LANGUAGES[target_lang], file_name))
         else:
             print(_('The file {1} has been succesfully translated in {0}.').format(SUPPORTED_LANGUAGES[target_lang], file_name))
         return po
 
-    def translate_all_locale(self, src_lang='auto', encoding='utf-8', auto_save=False):
+    def translate_all_locale(self, src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
         """
 
         :param src_lang:
         :param encoding:
         :param auto_save:
+        :param compiled:
         :return: Dictionary.
         """
         all_locales = listdir(self.locale_dir)
@@ -82,10 +85,10 @@ class PoTranslator:
             po_files = [file for file in listdir(join(self.locale_dir, locale, 'LC_MESSAGES')) if file.endswith('.po')]
             for po_file in po_files:
                 path = join(self.locale_dir, locale, 'LC_MESSAGES', po_file)
-                results[locale][po_file] = self.translate(path, src_lang=src_lang, target_lang=locale, encoding=encoding, auto_save=auto_save)
+                results[locale][po_file] = self.translate(path, src_lang=src_lang, target_lang=locale, encoding=encoding, auto_save=auto_save, compiled=compiled)
         return results
 
-    def translate_from_pot(self, filename, target_langs, src_lang='auto', encoding='utf-8', auto_save=False):
+    def translate_from_pot(self, filename, target_langs, src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
         """
 
         :param filename:
@@ -93,6 +96,7 @@ class PoTranslator:
         :param src_lang:
         :param encoding:
         :param auto_save:
+        :param compiled:
         :return: Dictionary.
         """
         pot = polib.pofile(filename, encoding=encoding)
@@ -106,21 +110,22 @@ class PoTranslator:
                     makedirs(po_dir)
                 po = deepcopy(pot)
                 po.save(po_path)
-            results[target_lang] = self.translate(po_path, target_lang=target_lang, src_lang=src_lang, encoding=encoding, auto_save=auto_save)
+            results[target_lang] = self.translate(po_path, target_lang=target_lang, src_lang=src_lang, encoding=encoding, auto_save=auto_save, compiled=compiled)
         return results
 
-    def translate_all_pot(self, target_langs, src_lang='auto', encoding='utf-8', auto_save=False):
+    def translate_all_pot(self, target_langs, src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
         """
 
         :param target_langs:
         :param src_lang:
         :param encoding:
         :param auto_save:
+        :param compiled:
         :return: Dictionary.
         """
         pot_files = [file for file in listdir(self.pot_dir) if file.endswith('.pot')]
         results = {}
         for pot_file in pot_files:
             path = join(self.pot_dir, pot_file)
-            results[pot_file] = self.translate_from_pot(path, target_langs=target_langs, src_lang=src_lang, encoding=encoding, auto_save=auto_save)
+            results[pot_file] = self.translate_from_pot(path, target_langs=target_langs, src_lang=src_lang, encoding=encoding, auto_save=auto_save, compiled=compiled)
         return results
