@@ -23,7 +23,8 @@ class PoTranslator:
                   target_lang: Text = ...,
                   src_lang: Text = ...,
                   encoding: Text = ...,
-                  auto_save: bool = ...
+                  auto_save: bool = ...,
+                  compiled: bool = ...
                   ) -> POFile: ...
 
     def translate_all_locale(self,
