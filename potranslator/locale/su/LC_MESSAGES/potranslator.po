@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=cp1252\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Translated-By: potranslator 0.1.0\n"
+"Translated-By: potranslator 0.2.0\n"
 
 #: ./potranslator/potranslator.py:49
 msgid ""

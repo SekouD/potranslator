@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=cp1252\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Translated-By: potranslator 0.1.0\n"
+"Translated-By: potranslator 0.2.0\n"
 
 #: ./potranslator/potranslator.py:49
 msgid ""
@@ -27,12 +27,13 @@ msgid ""
 "Unsupported language. To see the list of supported languages type "
 "potranslator -h"
 msgstr ""
-"Langue non prise en charge. Pour voir la liste des langues supportées, tapez "
-"potranslator -h"
+"Langue non prise en charge. Pour voir la liste des langues supportées, tapez"
+" potranslator -h"
 
 #: ./potranslator/potranslator.py:54
 msgid "{0} translations for the file {1} have been succesfully retrieved"
-msgstr "Les traductions en {0} pour le fichier {1} ont été récupérées avec succès"
+msgstr ""
+"Les traductions en {0} pour le fichier {1} ont été récupérées avec succès"
 
 #: ./potranslator/potranslator.py:59
 msgid "The file {1} has been succesfully translated in {0} and saved."
