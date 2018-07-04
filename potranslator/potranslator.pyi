@@ -36,6 +36,7 @@ class PoTranslator:
 
     def translate_from_pot(self,
                            filename: Any,
+                           status: Mapping[Text, int],
                            target_langs: Any,
                            src_lang: Text = ...,
                            encoding: Text = ...,
