@@ -57,6 +57,7 @@ class PoTranslator:
         po.metadata['Translated-By'] = 'potranslator {0}'.format(__version__)
         if auto_save:
             po.save(file_name)
+            po.save_as_mofile(file_name.replace('.po', '.mo'))
             print(_('The file {1} has been succesfully translated in {0} and saved.').format(SUPPORTED_LANGUAGES[target_lang], file_name))
         else:
             print(_('The file {1} has been succesfully translated in {0}.').format(SUPPORTED_LANGUAGES[target_lang], file_name))
