@@ -207,7 +207,7 @@ def main(ctx, config, tag):
 
     # for locale_dir
     ctx.locale_dir = None
-    if ctx.config:
+    if ctx.config:  # pragma: no cover
         cfg = read_config(ctx.config, tag)
         if 'locale_dirs' in cfg:
             ctx.locale_dir = os.path.join(

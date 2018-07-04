@@ -22,7 +22,7 @@ FS_ENCODING = sys.getfilesystemencoding() or sys.getdefaultencoding()
 if sys.version_info >= (2, 6):
     # Python >= 2.6
     relpath = os.path.relpath
-else:
+else:  # pragma: no cover
     from os.path import curdir
 
     def relpath(path, start=curdir):
@@ -45,7 +45,7 @@ else:
     del curdir
 
 if PY3:
-    def convert_with_2to3(filepath):
+    def convert_with_2to3(filepath):  # pragma: no cover
         from lib2to3.refactor import RefactoringTool, get_fixers_from_package
         from lib2to3.pgen2.parse import ParseError
         fixers = get_fixers_from_package('lib2to3.fixes')
@@ -60,11 +60,11 @@ if PY3:
             # try to match ParseError details with SyntaxError details
             raise SyntaxError(err.msg, (filepath, lineno, offset, err.value))
         return str(tree)
-else:
+else:  # pragma: no cover
     convert_with_2to3 = None
 
 
-def execfile_(filepath, _globals):
+def execfile_(filepath, _globals):  # pragma: no cover
     # get config source -- 'b' is a no-op under 2.x, while 'U' is
     # ignored under 3.x (but 3.x compile() accepts \r\n newlines)
     f = open(filepath, 'rbU')

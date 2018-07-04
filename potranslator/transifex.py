@@ -50,7 +50,7 @@ host = https://www.transifex.com
 def get_tx_root():
     import txclib.utils
     tx_root = txclib.utils.find_dot_tx()
-    if tx_root is None:
+    if tx_root is None:  # pragma: no cover
         msg = "'.tx/config' not found. You need 'create-txconfig' first."
         raise click.BadParameter(msg)
     return tx_root
@@ -120,7 +120,7 @@ def update_txconfig_resources(transifex_project_name, locale_dir, pot_dir):
     try:
         import txclib
         import txclib.utils
-    except ImportError:
+    except ImportError:  # pragma: no cover
         msg = textwrap.dedent("""\
             Could not import 'txclib.utils'.
             You need install transifex_client external library.
@@ -133,7 +133,7 @@ def update_txconfig_resources(transifex_project_name, locale_dir, pot_dir):
     tx_root = get_tx_root()
 
     tx_version = getattr(txclib, '__version__', '0.0')
-    if tx_version < '0.13':
+    if tx_version < '0.13':  # pragma: no cover
         args_tmpl = (
             '--auto-local', '-r', '%(transifex_project_name)s.%(resource_name)s',
             '%(locale_dir)s/<lang>/LC_MESSAGES/%(resource_path)s.po',
