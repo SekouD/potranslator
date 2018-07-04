@@ -7,7 +7,7 @@ __email__ = 'sekoud.python@gmail.com'
 __version__ = '0.2.0'
 __copyright__ = "Copyright (c) 2017, SekouD"
 __credits__ = ("SekouD",)
-__license__ = "MIT"
+__license__ = "BSD"
 __maintainer__ = "SekouD"
 __status__ = "Production"
 
