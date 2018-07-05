@@ -11,6 +11,7 @@ from copy import deepcopy
 from codecs import open
 import sys
 import click
+from json.decoder import JSONDecodeError
 
 _RESOURCE_PACKAGE = __name__
 
@@ -64,11 +65,14 @@ class PoTranslator:
         untranslated = [elmt for elmt in po if elmt.msgstr == '' and not elmt.obsolete]
         if untranslated:
             updated = True
-            translations = self.translator.translate([elmt.msgid for elmt in untranslated], src=src_lang, dest=target_lang)
-            print(_('{0} translations for the file {1} have been succesfully retrieved').format(SUPPORTED_LANGUAGES[target_lang], file_name))
-            for entry, translation in zip(untranslated, translations):
-                entry.msgstr = translation.text
-            po.metadata['Translated-By'] = 'potranslator {0}'.format(__version__)
+            try:
+                translations = self.translator.translate([elmt.msgid for elmt in untranslated], src=src_lang, dest=target_lang)
+                for entry, translation in zip(untranslated, translations):
+                    entry.msgstr = translation.text
+                po.metadata['Translated-By'] = 'potranslator {0}'.format(__version__)
+                print(_('{0} translations for the file {1} have been succesfully retrieved').format(SUPPORTED_LANGUAGES[target_lang], file_name))
+            except JSONDecodeError as e:
+                print(_('{0} translations for the file {1} could not be retrieved').format(SUPPORTED_LANGUAGES[target_lang], file_name))
             if auto_save:
                 po.save(file_name)
                 print(_('The file {1} has been succesfully translated in {0} and saved.').format(SUPPORTED_LANGUAGES[target_lang], file_name))
