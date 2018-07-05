@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, SekouD
+# This file is distributed under the same license as the potranslator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: potranslator 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 13:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: 2018-07-05\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translated-By: potranslator 1.0.3\n"
+
+#: ../../../HISTORY.rst:3
+msgid "History"
+msgstr "Historia"
+
+#: ../../../HISTORY.rst:6
+msgid "1.0.0 (2018-07-05)"
+msgstr "1.0.0 (2018-07-05)"
+
+#: ../../../HISTORY.rst:8
+msgid "First release candidate."
+msgstr "Pierwszy kandydat do wydania."
+
+#: ../../../HISTORY.rst:9
+msgid "Added Command Line Interface."
+msgstr "Dodano interfejs wiersza poleceń."
+
+#: ../../../HISTORY.rst:13
+msgid "0.1.0 (2018-06-27)"
+msgstr "0.1.0 (2018-06-27)"
+
+#: ../../../HISTORY.rst:15
+msgid "First release on PyPI."
+msgstr "Pierwsze wydanie na PyPI."

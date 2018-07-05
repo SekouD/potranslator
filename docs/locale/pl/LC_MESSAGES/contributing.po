@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, SekouD
+# This file is distributed under the same license as the potranslator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: potranslator 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 13:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: 2018-07-05\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translated-By: potranslator 1.0.3\n"
+
+#: ../../../CONTRIBUTING.rst:5
+msgid "Contributing"
+msgstr "Współtworzenie"
+
+#: ../../../CONTRIBUTING.rst:7
+msgid ""
+"Contributions are welcome, and they are greatly appreciated! Every little "
+"bit helps, and credit will always be given."
+msgstr ""
+"Składki są mile widziane i są bardzo cenione! Każda odrobina pomaga, a "
+"kredyt zawsze będzie przyznawany."
+
+#: ../../../CONTRIBUTING.rst:10
+msgid "You can contribute in many ways:"
+msgstr "Możesz przyczynić się na wiele sposobów:"
+
+#: ../../../CONTRIBUTING.rst:13
+msgid "Types of Contributions"
+msgstr "Rodzaje wkładów"
+
+#: ../../../CONTRIBUTING.rst:16
+msgid "Report Bugs"
+msgstr "Zgłoś błędy"
+
+#: ../../../CONTRIBUTING.rst:18
+msgid "Report bugs at https://github.com/SekouD/potranslator/issues."
+msgstr "Zgłoś błędy na https://github.com/SekouD/potranslator/issues."
+
+#: ../../../CONTRIBUTING.rst:20
+msgid "If you are reporting a bug, please include:"
+msgstr "Jeśli zgłaszasz błąd, dołącz:"
+
+#: ../../../CONTRIBUTING.rst:22
+msgid "Your operating system name and version."
+msgstr "Twoja nazwa i wersja systemu operacyjnego."
+
+#: ../../../CONTRIBUTING.rst:23
+msgid ""
+"Any details about your local setup that might be helpful in troubleshooting."
+msgstr ""
+"Dowolne szczegóły dotyczące lokalnej konfiguracji, które mogą być pomocne w "
+"rozwiązywaniu problemów."
+
+#: ../../../CONTRIBUTING.rst:24
+msgid "Detailed steps to reproduce the bug."
+msgstr "Szczegółowe kroki w celu odtworzenia błędu."
+
+#: ../../../CONTRIBUTING.rst:27
+msgid "Fix Bugs"
+msgstr "Naprawić błędy"
+
+#: ../../../CONTRIBUTING.rst:29
+msgid ""
+"Look through the GitHub issues for bugs. Anything tagged with \"bug\" and "
+"\"help wanted\" is open to whoever wants to implement it."
+msgstr ""
+"Przejrzyj problemy z GitHub w poszukiwaniu błędów. Wszystko oznaczone "
+"\"bug\" i \"help wanted\" jest otwarte dla każdego, kto chce to "
+"zaimplementować."
+
+#: ../../../CONTRIBUTING.rst:33
+msgid "Implement Features"
+msgstr "Wdróż funkcje"
+
+#: ../../../CONTRIBUTING.rst:35
+msgid ""
+"Look through the GitHub issues for features. Anything tagged with "
+"\"enhancement\" and \"help wanted\" is open to whoever wants to implement "
+"it."
+msgstr ""
+"Przejrzyj problemy z GitHub dla funkcji. Wszystko oznaczone \"ulepszeniem\" "
+"i \"potrzebną pomocą\" jest otwarte dla każdego, kto chce to "
+"zaimplementować."
+
+#: ../../../CONTRIBUTING.rst:39
+msgid "Write Documentation"
+msgstr "Napisz dokumentację"
+
+#: ../../../CONTRIBUTING.rst:41
+msgid ""
+"potranslator could always use more documentation, whether as part of the "
+"official potranslator docs, in docstrings, or even on the web in blog posts,"
+" articles, and such."
+msgstr ""
+"potranslator może zawsze korzystać z większej ilości dokumentacji, zarówno w"
+" ramach oficjalnych dokumentów potranslatora, w docstrings, a nawet w sieci "
+"w postach na blogu, artykułach i tym podobnych."
+
+#: ../../../CONTRIBUTING.rst:46
+msgid "Submit Feedback"
+msgstr "Prześlij opinię"
+
+#: ../../../CONTRIBUTING.rst:48
+msgid ""
+"The best way to send feedback is to file an issue at "
+"https://github.com/SekouD/potranslator/issues."
+msgstr ""
+"Najlepszym sposobem na przesłanie opinii jest zgłoszenie problemu na stronie"
+" https://github.com/SekouD/potranslator/issues."
+
+#: ../../../CONTRIBUTING.rst:50
+msgid "If you are proposing a feature:"
+msgstr "Jeśli proponujesz funkcję:"
+
+#: ../../../CONTRIBUTING.rst:52
+msgid "Explain in detail how it would work."
+msgstr "Wyjaśnij szczegółowo, jak to będzie działać."
+
+#: ../../../CONTRIBUTING.rst:53
+msgid "Keep the scope as narrow as possible, to make it easier to implement."
+msgstr "Zachowaj możliwie wąski zakres, aby ułatwić jego wdrożenie."
+
+#: ../../../CONTRIBUTING.rst:54
+msgid ""
+"Remember that this is a volunteer-driven project, and that contributions are"
+" welcome :)"
+msgstr ""
+"Pamiętaj, że jest to projekt oparty na wolontariacie i ten wkład jest mile "
+"widziany :)"
+
+#: ../../../CONTRIBUTING.rst:58
+msgid "Get Started!"
+msgstr "Zaczynać!"
+
+#: ../../../CONTRIBUTING.rst:60
+msgid ""
+"Ready to contribute? Here's how to set up `potranslator` for local "
+"development."
+msgstr ""
+"Gotowy do wniesienia? Oto jak skonfigurować `potranslator` dla lokalnego "
+"rozwoju."
+
+#: ../../../CONTRIBUTING.rst:62
+msgid "Fork the `potranslator` repo on GitHub."
+msgstr "Rozwiąż rePO `potranslator` na GitHub."
+
+#: ../../../CONTRIBUTING.rst:63
+msgid "Clone your fork locally::"
+msgstr "Sklonuj widelec lokalnie ::"
+
+#: ../../../CONTRIBUTING.rst:67
+msgid ""
+"Install your local copy into a virtualenv. Assuming you have "
+"virtualenvwrapper installed, this is how you set up your fork for local "
+"development::"
+msgstr ""
+"Zainstaluj lokalną kopię w virtualenv. Zakładając, że masz zainstalowany "
+"virtualenvwrapper, tak skonfigurujesz widelec do lokalnego rozwoju:"
+
+#: ../../../CONTRIBUTING.rst:73
+msgid "Create a branch for local development::"
+msgstr "Utwórz oddział dla rozwoju lokalnego ::"
+
+#: ../../../CONTRIBUTING.rst:77
+msgid "Now you can make your changes locally."
+msgstr "Teraz możesz wprowadzić zmiany lokalnie."
+
+#: ../../../CONTRIBUTING.rst:79
+msgid ""
+"When you're done making changes, check that your changes pass flake8 and the"
+" tests, including testing other Python versions with tox::"
+msgstr ""
+"Po wprowadzeniu zmian sprawdź, czy zmiany przekazują flake8 i testy, w tym "
+"testowanie innych wersji Pythona z tox ::"
+
+#: ../../../CONTRIBUTING.rst:86
+msgid "To get flake8 and tox, just pip install them into your virtualenv."
+msgstr "Aby uzyskać flake8 i tox, po prostu zainstaluj je w swoim virtualenv."
+
+#: ../../../CONTRIBUTING.rst:88
+msgid "Commit your changes and push your branch to GitHub::"
+msgstr "Zatwierdź zmiany i popchnij swój oddział do GitHub ::"
+
+#: ../../../CONTRIBUTING.rst:94
+msgid "Submit a pull request through the GitHub website."
+msgstr "Prześlij żądanie ściągnięcia za pośrednictwem strony GitHub."
+
+#: ../../../CONTRIBUTING.rst:97
+msgid "Pull Request Guidelines"
+msgstr "Wytyczne Pull Request"
+
+#: ../../../CONTRIBUTING.rst:99
+msgid ""
+"Before you submit a pull request, check that it meets these guidelines:"
+msgstr ""
+"Zanim prześlesz żądanie pobrania, sprawdź, czy spełnia ono następujące "
+"wytyczne:"
+
+#: ../../../CONTRIBUTING.rst:101
+msgid "The pull request should include tests."
+msgstr "Żądanie pobrania powinno zawierać testy."
+
+#: ../../../CONTRIBUTING.rst:102
+msgid ""
+"If the pull request adds functionality, the docs should be updated. Put your"
+" new functionality into a function with a docstring, and add the feature to "
+"the list in README.rst."
+msgstr ""
+"Jeśli żądanie pobrania dodaje funkcję, dokumenty powinny zostać "
+"zaktualizowane. Umieść nową funkcję w funkcji za pomocą docstrukcji i dodaj "
+"funkcję do listy w pliku README.rst."
+
+#: ../../../CONTRIBUTING.rst:105
+msgid ""
+"The pull request should work for Python 2.7, 3.4, 3.5 and 3.6, and for PyPy."
+" Check https://travis-ci.org/SekouD/potranslator/pull_requests and make sure"
+" that the tests pass for all supported Python versions."
+msgstr ""
+"Żądanie pobrania powinno działać dla Pythona 2.7, 3.4, 3.5 i 3.6 oraz dla "
+"PyPy. Sprawdź https://travis-ci.org/SekouD/potranslator/pull_requests i "
+"upewnij się, że testy przechodzą na wszystkie obsługiwane wersje Pythona."
+
+#: ../../../CONTRIBUTING.rst:110
+msgid "Tips"
+msgstr "Wskazówki"
+
+#: ../../../CONTRIBUTING.rst:112
+msgid "To run a subset of tests::"
+msgstr "Aby uruchomić podzestaw testów:"
+
+#: ../../../CONTRIBUTING.rst:118
+msgid "Deploying"
+msgstr "Wdrażanie"
+
+#: ../../../CONTRIBUTING.rst:120
+msgid ""
+"A reminder for the maintainers on how to deploy. Make sure all your changes "
+"are committed (including an entry in HISTORY.rst). Then run::"
+msgstr ""
+"Przypomnienie dla opiekunów o sposobie wdrażania. Upewnij się, że wszystkie "
+"zmiany zostały zatwierdzone (w tym wpis w HISTORY.rst). Następnie "
+"uruchomić::"
+
+#: ../../../CONTRIBUTING.rst:128
+msgid "Travis will then deploy to PyPI if tests pass."
+msgstr "Travis następnie wdroży do PyPI, jeśli testy przejdą."

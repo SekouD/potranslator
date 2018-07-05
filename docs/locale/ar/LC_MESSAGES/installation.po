@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, SekouD
+# This file is distributed under the same license as the potranslator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: potranslator 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 13:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: 2018-07-05\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translated-By: potranslator 1.0.3\n"
+
+#: ../../installation.rst:5
+msgid "Installation"
+msgstr "التركيب"
+
+#: ../../installation.rst:9
+msgid "Stable release"
+msgstr "إصدارة مستقرة"
+
+#: ../../installation.rst:11
+msgid "To install potranslator, run this command in your terminal:"
+msgstr "لتثبيت potranslator ، قم بتشغيل هذا الأمر في الطرفية الخاصة بك:"
+
+#: ../../installation.rst:17
+msgid ""
+"This is the preferred method to install potranslator, as it will always "
+"install the most recent stable release."
+msgstr ""
+"هذه هي الطريقة المفضلة لترجمة potranslator ، حيث ستقوم دائمًا بتثبيت أحدث "
+"إصدار ثابت."
+
+#: ../../installation.rst:19
+msgid ""
+"If you don't have `pip`_ installed, this `Python installation guide`_ can "
+"guide you through the process."
+msgstr ""
+"إذا لم يكن لديك `pip`_ مثبتًا ، فإن هذا` دليل تثبيت بايثون` يمكن أن يرشدك "
+"خلال العملية."
+
+#: ../../installation.rst:27
+msgid "From sources"
+msgstr "من المصادر"
+
+#: ../../installation.rst:29
+msgid ""
+"The sources for potranslator can be downloaded from the `Github repo`_."
+msgstr "يمكن تنزيل المصادر الخاصة بـ potranslator من `Github repo`_."
+
+#: ../../installation.rst:31
+msgid "You can either clone the public repository:"
+msgstr "يمكنك إما استنساخ المستودع العام:"
+
+#: ../../installation.rst:37
+msgid "Or download the `tarball`_:"
+msgstr "أو قم بتنزيل `tarball`_:"
+
+#: ../../installation.rst:43
+msgid "Once you have a copy of the source, you can install it with:"
+msgstr "بمجرد الحصول على نسخة من المصدر ، يمكنك تثبيته مع:"

@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, SekouD
+# This file is distributed under the same license as the potranslator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: potranslator 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 14:03+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: 2018-07-05\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translated-By: potranslator 1.0.3\n"
+
+#: ../../modules.rst:3
+msgid "Package Api Documentation for potranslator"
+msgstr "Pakiet Dokumentacja Api dla potranslatora"
+
+#: ../../modules.rst:7
+msgid "API Reference for the classes in potranslator.potranslator.py"
+msgstr "Odnośnik API dla klas w potranslator.potranslator.py"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator:1
+msgid "Main module."
+msgstr "Główny moduł."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator:1
+msgid "Bases: :class:`object`"
+msgstr "Bazy:: class: `object`"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator:1
+msgid ""
+"This is the main class of this library. This class manages all translation "
+"tasks."
+msgstr ""
+"To jest główna klasa tej biblioteki. Ta klasa zarządza wszystkimi zadaniami "
+"tłumaczeniowymi."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:0
+msgid "Parameters"
+msgstr "Parametry"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator:3
+msgid "string. Path to the pot directory."
+msgstr "strunowy. Ścieżka do katalogu pot."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator:5
+msgid "string. Path to the locale directory."
+msgstr "strunowy. Ścieżka do katalogu ustawień regionalnych."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:1
+msgid "Translates the given po file in the specified target language."
+msgstr "Przetłumaczy dany plik po w określonym języku docelowym."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:3
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:3
+msgid "string. Path to the filename of the file to translate."
+msgstr "strunowy. Ścieżka do pliku pliku do przetłumaczenia."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:5
+msgid "string. Target language for translation."
+msgstr "strunowy. Język docelowy do tłumaczenia."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:7
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:3
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:7
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:5
+msgid "string. Source language for translation."
+msgstr "strunowy. Język źródłowy do tłumaczenia."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:9
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:5
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:9
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:7
+msgid "string. Encoding for saving the po files."
+msgstr "strunowy. Kodowanie do zapisywania plików PO."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:11
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:7
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:11
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:9
+msgid "bool. Toggles auto save feature."
+msgstr "bool. Przełącza funkcję automatycznego zapisywania."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:13
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:9
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:13
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:11
+msgid "bool. Toggles compilation to mo files."
+msgstr "bool. Przełącza kompilację do plików mo."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:0
+msgid "Returns"
+msgstr "Zwroty"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:15
+msgid ""
+"tuple. A tuple containing the translated version of the original catalog and"
+" the status of the POFile."
+msgstr ""
+"krotka. Krotka zawierająca przetłumaczoną wersję oryginalnego katalogu i "
+"status POFile."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:1
+msgid ""
+"Translates all the po files in the found languages in the locale folder."
+msgstr ""
+"Przetłumaczy wszystkie pliki po w znalezionych językach w folderze ustawień "
+"regionalnych."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:11
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:15
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:13
+msgid "Dictionary. A dictionary of po files."
+msgstr "Słownik. Słownik plików po."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:1
+msgid "Translates the given pot file in the specified target languages."
+msgstr "Przetwarza dany plik pul w określonych językach docelowych."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:5
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:3
+msgid "sequence of strings. Target language for translation."
+msgstr "ciąg znaków. Język docelowy do tłumaczenia."
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:1
+msgid ""
+"Translates all the pot files in the pot folder in the specified target "
+"languages."
+msgstr ""
+"Przetłumaczy wszystkie pliki pul w folderze pot w określonych językach "
+"docelowych."
