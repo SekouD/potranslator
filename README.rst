@@ -40,7 +40,7 @@ Optional: supports the Transifex collaborative service to upload the auto-genera
 
 
 Supported Languages
--------------------
+===================
 
 - Afrikaans	af
 - Albanian	sq
