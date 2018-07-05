@@ -149,9 +149,6 @@ Supported Languages
 
 
 
-.. contents::
-   :local:
-
 QuickStart for auto-translation with potranslator
 =================================================
 
