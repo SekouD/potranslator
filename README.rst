@@ -294,7 +294,7 @@ This utilty is derived from this project.
 CHANGES
 =======
 
-See: https://github.com/sphinx-doc/potranslator/blob/master/HISTORY.rst
+See: https://github.com/SekouD/potranslator/blob/master/HISTORY.rst
 
 .. _Sphinx: http://sphinx-doc.org
 .. _sphinx-intl: https://pypi.org/project/sphinx-intl
