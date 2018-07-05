@@ -50,8 +50,8 @@ class PoTranslator:
             Toggles auto save feature.
         :param compiled: bool.
             Toggles compilation to mo files.
-        :return: POFile.
-            The translated version of the original catalog.
+        :return: tuple.
+            A tuple containing the translated version of the original catalog and the status of the POFile.
         """
         po = polib.pofile(file_name, encoding=encoding)
         if target_lang == 'auto':
