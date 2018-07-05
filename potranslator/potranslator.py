@@ -8,6 +8,7 @@ from . import polib, Translator, pkg_resources, json
 from . import SUPPORTED_LANGUAGES, __version__
 from collections import defaultdict
 from copy import deepcopy
+from datetime import date
 from codecs import open
 import sys
 import click
@@ -74,6 +75,8 @@ class PoTranslator:
                 for entry, translation in zip(untranslated, translations):
                     entry.msgstr = translation.text
                 po.metadata['Translated-By'] = 'potranslator {0}'.format(__version__)
+                po.metadata['Language'] = target_lang
+                po.metadata['Last-Translator'] = str(date.today())
                 print(_('{0} translations for the file {1} have been succesfully retrieved').format(SUPPORTED_LANGUAGES[target_lang], file_name))
             except JSONDecodeError as e:
                 print(_('{0} translations for the file {1} could not be retrieved').format(SUPPORTED_LANGUAGES[target_lang], file_name))
