@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, SekouD
+# This file is distributed under the same license as the potranslator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: potranslator 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 14:03+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translated-By: potranslator 0.2.0\n"
+
+#: ../../modules.rst:3
+msgid "Package Api Documentation for potranslator"
+msgstr "翻訳者のためのApiドキュメンテーションパッケージ"
+
+#: ../../modules.rst:7
+msgid "API Reference for the classes in potranslator.potranslator.py"
+msgstr "potranslator.potranslator.pyのクラスのAPIリファレンス"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator:1
+msgid "Main module."
+msgstr "メインモジュール。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator:1
+msgid "Bases: :class:`object`"
+msgstr "ベース：：class： `object`"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator:1
+msgid ""
+"This is the main class of this library. This class manages all translation "
+"tasks."
+msgstr "これはこのライブラリの主要クラスです。このクラスはすべての翻訳タスクを管理します。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:0
+msgid "Parameters"
+msgstr "パラメーター"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator:3
+msgid "string. Path to the pot directory."
+msgstr "文字列。 potディレクトリへのパス。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator:5
+msgid "string. Path to the locale directory."
+msgstr "文字列。ロケールディレクトリへのパス。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:1
+msgid "Translates the given po file in the specified target language."
+msgstr "与えられたpoファイルを指定されたターゲット言語で翻訳します。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:3
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:3
+msgid "string. Path to the filename of the file to translate."
+msgstr "文字列。変換するファイルのファイル名へのパス。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:5
+msgid "string. Target language for translation."
+msgstr "文字列。翻訳の対象言語。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:7
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:3
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:7
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:5
+msgid "string. Source language for translation."
+msgstr "文字列。翻訳元言語。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:9
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:5
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:9
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:7
+msgid "string. Encoding for saving the po files."
+msgstr "文字列。 poファイルを保存するためのエンコーディング。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:11
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:7
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:11
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:9
+msgid "bool. Toggles auto save feature."
+msgstr "ブール自動保存機能を切り替えます。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:13
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:9
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:13
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:11
+msgid "bool. Toggles compilation to mo files."
+msgstr "ブールコンパイルをmoファイルに切り替えます。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:0
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:0
+msgid "Returns"
+msgstr "返品"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate:15
+msgid ""
+"tuple. A tuple containing the translated version of the original catalog and"
+" the status of the POFile."
+msgstr "タプル。元のカタログの翻訳バージョンとPOFileのステータスを含むタプル。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:1
+msgid ""
+"Translates all the po files in the found languages in the locale folder."
+msgstr "見つかった言語のすべてのpoファイルをロケールフォルダに翻訳します。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_locale:11
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:15
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:13
+msgid "Dictionary. A dictionary of po files."
+msgstr "辞書。 poファイルの辞書。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:1
+msgid "Translates the given pot file in the specified target languages."
+msgstr "与えられたポットファイルを指定されたターゲット言語で翻訳します。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_from_pot:5
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:3
+msgid "sequence of strings. Target language for translation."
+msgstr "文字列のシーケンス。翻訳の対象言語。"
+
+#: ../../../potranslator/potranslator.py:docstring of
+#: potranslator.potranslator.PoTranslator.translate_all_pot:1
+msgid ""
+"Translates all the pot files in the pot folder in the specified target "
+"languages."
+msgstr "指定したターゲット言語のpotフォルダ内のすべてのファイルを変換します。"

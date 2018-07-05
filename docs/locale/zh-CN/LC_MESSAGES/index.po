@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, SekouD
+# This file is distributed under the same license as the potranslator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: potranslator 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 13:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translated-By: potranslator 0.2.0\n"
+
+#: ../../index.rst:2
+msgid "Welcome to potranslator's documentation!"
+msgstr "欢迎来到potranslator的文档！"
+
+#: ../../index.rst:4
+msgid "Contents:"
+msgstr "内容："
+
+#: ../../index.rst:17
+msgid "Indices and tables"
+msgstr "指数和表格"
+
+#: ../../index.rst:18
+msgid ":ref:`genindex`"
+msgstr "：REF：`genindex`"
+
+#: ../../index.rst:19
+msgid ":ref:`modindex`"
+msgstr "：REF：`modindex`"
+
+#: ../../index.rst:20
+msgid ":ref:`search`"
+msgstr "：REF：`search`"

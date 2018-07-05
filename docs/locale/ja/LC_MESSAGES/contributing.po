@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, SekouD
+# This file is distributed under the same license as the potranslator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: potranslator 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 13:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translated-By: potranslator 0.2.0\n"
+
+#: ../../../CONTRIBUTING.rst:5
+msgid "Contributing"
+msgstr "貢献する"
+
+#: ../../../CONTRIBUTING.rst:7
+msgid ""
+"Contributions are welcome, and they are greatly appreciated! Every little "
+"bit helps, and credit will always be given."
+msgstr "寄付は大歓迎です、そして、彼らは大いに感謝しています！少しずつ助けられ、常に信用が与えられます。"
+
+#: ../../../CONTRIBUTING.rst:10
+msgid "You can contribute in many ways:"
+msgstr "あなたはいろいろな方法で貢献することができます："
+
+#: ../../../CONTRIBUTING.rst:13
+msgid "Types of Contributions"
+msgstr "貢献の種類"
+
+#: ../../../CONTRIBUTING.rst:16
+msgid "Report Bugs"
+msgstr "レポートのバグ"
+
+#: ../../../CONTRIBUTING.rst:18
+msgid "Report bugs at https://github.com/SekouD/potranslator/issues."
+msgstr "バグはhttps://github.com/SekouD/potranslator/issuesで報告してください。"
+
+#: ../../../CONTRIBUTING.rst:20
+msgid "If you are reporting a bug, please include:"
+msgstr "バグを報告している場合は、以下を含めてください："
+
+#: ../../../CONTRIBUTING.rst:22
+msgid "Your operating system name and version."
+msgstr "お使いのオペレーティングシステムの名前とバージョン。"
+
+#: ../../../CONTRIBUTING.rst:23
+msgid ""
+"Any details about your local setup that might be helpful in troubleshooting."
+msgstr "トラブルシューティングに役立つローカルセットアップに関する詳細。"
+
+#: ../../../CONTRIBUTING.rst:24
+msgid "Detailed steps to reproduce the bug."
+msgstr "バグを再現するための詳細な手順。"
+
+#: ../../../CONTRIBUTING.rst:27
+msgid "Fix Bugs"
+msgstr "バグ修正"
+
+#: ../../../CONTRIBUTING.rst:29
+msgid ""
+"Look through the GitHub issues for bugs. Anything tagged with \"bug\" and "
+"\"help wanted\" is open to whoever wants to implement it."
+msgstr ""
+"GitHubのバグの問題を見てください。 「バグ」と「ヘルプが必要」とタグ付けされたものは誰でも、それを実装したいと思っている人には公開されています。"
+
+#: ../../../CONTRIBUTING.rst:33
+msgid "Implement Features"
+msgstr "機能を実装する"
+
+#: ../../../CONTRIBUTING.rst:35
+msgid ""
+"Look through the GitHub issues for features. Anything tagged with "
+"\"enhancement\" and \"help wanted\" is open to whoever wants to implement "
+"it."
+msgstr ""
+"機能についてはGitHubの問題を見てください。 "
+"「強化」と「援助したい」というタグが付いているものは、誰でもそれを実装したいと思う人には公開されています。"
+
+#: ../../../CONTRIBUTING.rst:39
+msgid "Write Documentation"
+msgstr "ドキュメントを書く"
+
+#: ../../../CONTRIBUTING.rst:41
+msgid ""
+"potranslator could always use more documentation, whether as part of the "
+"official potranslator docs, in docstrings, or even on the web in blog posts,"
+" articles, and such."
+msgstr ""
+"翻訳者は、公式の翻訳者ドキュメント、ドキュメントストリング、ブログ記事、記事などのウェブ上であっても、常により多くのドキュメントを使用することができます。"
+
+#: ../../../CONTRIBUTING.rst:46
+msgid "Submit Feedback"
+msgstr "フィードバックを送信"
+
+#: ../../../CONTRIBUTING.rst:48
+msgid ""
+"The best way to send feedback is to file an issue at "
+"https://github.com/SekouD/potranslator/issues."
+msgstr ""
+"フィードバックを送信する最善の方法は、https://github.com/SekouD/potranslator/issuesで問題を提出することです。"
+
+#: ../../../CONTRIBUTING.rst:50
+msgid "If you are proposing a feature:"
+msgstr "フィーチャーを提案している場合："
+
+#: ../../../CONTRIBUTING.rst:52
+msgid "Explain in detail how it would work."
+msgstr "それがどのように機能するかを詳細に説明してください。"
+
+#: ../../../CONTRIBUTING.rst:53
+msgid "Keep the scope as narrow as possible, to make it easier to implement."
+msgstr "スコープをできるだけ狭くしておくと、実装が簡単になります。"
+
+#: ../../../CONTRIBUTING.rst:54
+msgid ""
+"Remember that this is a volunteer-driven project, and that contributions are"
+" welcome :)"
+msgstr "これはボランティア主導のプロジェクトであり、貢献は歓迎します:)"
+
+#: ../../../CONTRIBUTING.rst:58
+msgid "Get Started!"
+msgstr "始めよう！"
+
+#: ../../../CONTRIBUTING.rst:60
+msgid ""
+"Ready to contribute? Here's how to set up `potranslator` for local "
+"development."
+msgstr "貢献する準備ができましたか？ローカル開発のために `potranslator 'を設定する方法は次のとおりです。"
+
+#: ../../../CONTRIBUTING.rst:62
+msgid "Fork the `potranslator` repo on GitHub."
+msgstr "GitHubで `potranslator`リポジトリをフォークします。"
+
+#: ../../../CONTRIBUTING.rst:63
+msgid "Clone your fork locally::"
+msgstr "ローカルでフォークをクローン::"
+
+#: ../../../CONTRIBUTING.rst:67
+msgid ""
+"Install your local copy into a virtualenv. Assuming you have "
+"virtualenvwrapper installed, this is how you set up your fork for local "
+"development::"
+msgstr ""
+"ローカルコピーをvirtualenvにインストールします。 "
+"virtualenvwrapperがインストールされていると仮定すると、ローカル開発用にフォークを設定する方法です::"
+
+#: ../../../CONTRIBUTING.rst:73
+msgid "Create a branch for local development::"
+msgstr "ローカル開発のためのブランチを作成する::"
+
+#: ../../../CONTRIBUTING.rst:77
+msgid "Now you can make your changes locally."
+msgstr "これで、ローカルで変更を加えることができます。"
+
+#: ../../../CONTRIBUTING.rst:79
+msgid ""
+"When you're done making changes, check that your changes pass flake8 and the"
+" tests, including testing other Python versions with tox::"
+msgstr ""
+"変更が終わったら、変更内容がflake8とtestingを通過していることを確認します。他のPythonのバージョンをtoxでテストすることもできます::"
+
+#: ../../../CONTRIBUTING.rst:86
+msgid "To get flake8 and tox, just pip install them into your virtualenv."
+msgstr "flake8とtoxを取得するには、それらをvirtualenvにインストールしてください。"
+
+#: ../../../CONTRIBUTING.rst:88
+msgid "Commit your changes and push your branch to GitHub::"
+msgstr "変更をコミットしてブランチをGitHub ::に送ります"
+
+#: ../../../CONTRIBUTING.rst:94
+msgid "Submit a pull request through the GitHub website."
+msgstr "GitHubのウェブサイトからプルリクエストを提出してください。"
+
+#: ../../../CONTRIBUTING.rst:97
+msgid "Pull Request Guidelines"
+msgstr "プルリクエストガイドライン"
+
+#: ../../../CONTRIBUTING.rst:99
+msgid ""
+"Before you submit a pull request, check that it meets these guidelines:"
+msgstr "プルリクエストを送信する前に、次のガイドラインに従っていることを確認してください："
+
+#: ../../../CONTRIBUTING.rst:101
+msgid "The pull request should include tests."
+msgstr "プルリクエストにはテストを含める必要があります。"
+
+#: ../../../CONTRIBUTING.rst:102
+msgid ""
+"If the pull request adds functionality, the docs should be updated. Put your"
+" new functionality into a function with a docstring, and add the feature to "
+"the list in README.rst."
+msgstr ""
+"プル要求が機能を追加する場合は、ドキュメントを更新する必要があります。新しい機能をドキュメントストリングを含む関数に置き、その機能をREADME.rstのリストに追加します。"
+
+#: ../../../CONTRIBUTING.rst:105
+msgid ""
+"The pull request should work for Python 2.7, 3.4, 3.5 and 3.6, and for PyPy."
+" Check https://travis-ci.org/SekouD/potranslator/pull_requests and make sure"
+" that the tests pass for all supported Python versions."
+msgstr ""
+"プルリクエストは、Python 2.7,3.4,3.5、および3.6、およびPyPyで動作するはずです。 https://travis-"
+"ci.org/SekouD/potranslator/pull_requestsをチェックし、テストがサポートされているすべてのPythonバージョンを通過することを確認してください。"
+
+#: ../../../CONTRIBUTING.rst:110
+msgid "Tips"
+msgstr "ヒント"
+
+#: ../../../CONTRIBUTING.rst:112
+msgid "To run a subset of tests::"
+msgstr "テストのサブセットを実行する::"
+
+#: ../../../CONTRIBUTING.rst:118
+msgid "Deploying"
+msgstr "展開"
+
+#: ../../../CONTRIBUTING.rst:120
+msgid ""
+"A reminder for the maintainers on how to deploy. Make sure all your changes "
+"are committed (including an entry in HISTORY.rst). Then run::"
+msgstr ""
+"保守担当者にデプロイ方法のリマインダー。すべての変更がコミットされていることを確認してください（HISTORY.rstのエントリを含む）。次に実行::"
+
+#: ../../../CONTRIBUTING.rst:128
+msgid "Travis will then deploy to PyPI if tests pass."
+msgstr "テストが合格するとTravisはPyPIにデプロイします。"

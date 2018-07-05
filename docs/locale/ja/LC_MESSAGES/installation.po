@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, SekouD
+# This file is distributed under the same license as the potranslator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: potranslator 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 13:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translated-By: potranslator 0.2.0\n"
+
+#: ../../installation.rst:5
+msgid "Installation"
+msgstr "インストール"
+
+#: ../../installation.rst:9
+msgid "Stable release"
+msgstr "安定したリリース"
+
+#: ../../installation.rst:11
+msgid "To install potranslator, run this command in your terminal:"
+msgstr "potranslatorをインストールするには、端末で次のコマンドを実行します。"
+
+#: ../../installation.rst:17
+msgid ""
+"This is the preferred method to install potranslator, as it will always "
+"install the most recent stable release."
+msgstr "これは、常に最新の安定版リリースをインストールするため、翻訳者をインストールするのに推奨される方法です。"
+
+#: ../../installation.rst:19
+msgid ""
+"If you don't have `pip`_ installed, this `Python installation guide`_ can "
+"guide you through the process."
+msgstr "`pip`がインストールされていない場合、この` Python installation guide`_がプロセスを案内します。"
+
+#: ../../installation.rst:27
+msgid "From sources"
+msgstr "ソースから"
+
+#: ../../installation.rst:29
+msgid ""
+"The sources for potranslator can be downloaded from the `Github repo`_."
+msgstr "翻訳者のソースは `Github repo`_からダウンロードできます。"
+
+#: ../../installation.rst:31
+msgid "You can either clone the public repository:"
+msgstr "パブリックリポジトリをクローンすることもできます："
+
+#: ../../installation.rst:37
+msgid "Or download the `tarball`_:"
+msgstr "あるいは `tarball`_をダウンロードしてください："
+
+#: ../../installation.rst:43
+msgid "Once you have a copy of the source, you can install it with:"
+msgstr "ソースのコピーを取得したら、次の方法でインストールできます。"
