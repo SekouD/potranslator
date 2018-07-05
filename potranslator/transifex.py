@@ -95,7 +95,7 @@ def create_transifexrc(transifex_username, transifex_password):
     click.echo('Create: {0}'.format(target))
 
 
-def create_txconfig():
+def create_txconfig():  # pragma: no cover
     """
     Create `./.tx/config`
     """
@@ -113,7 +113,7 @@ def create_txconfig():
     click.echo('Create: {0}'.format(target))
 
 
-def update_txconfig_resources(transifex_project_name, locale_dir, pot_dir):
+def update_txconfig_resources(transifex_project_name, locale_dir, pot_dir):  # pragma: no cover
     """
     Update resource sections of `./.tx/config`.
     """
