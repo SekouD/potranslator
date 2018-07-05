@@ -79,11 +79,11 @@ def create_transifexrc(transifex_username, transifex_password):
     """
     target = os.path.normpath(os.path.expanduser('~/.transifexrc'))
 
-    if os.path.exists(target):
+    if os.path.exists(target):  # pragma: no cover
         click.echo('{0} already exists, skipped.'.format(target))
         return
 
-    if not transifex_username or not 'transifex_password':
+    if not transifex_username or not 'transifex_password':  # pragma: no cover
         msg = textwrap.dedent("""\
         You need transifex username/password by command option or environment.
         command option: --transifex-username, --transifex-password
