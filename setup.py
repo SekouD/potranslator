@@ -67,6 +67,7 @@ setup(
     long_description=readme + '\n\n' + history,
     include_package_data=True,
     package_data={'translations': ['potranslator/locale/*'],
+                  'tests': ['tests/*'],
                   'type_stubs': ['potranslator/py.typed', 'potranslator/*']},
     keywords='potranslator',
     name='potranslator',
