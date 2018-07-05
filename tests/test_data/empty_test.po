@@ -18,16 +18,16 @@ msgstr ""
 
 #: ../../../AUTHORS.rst:3
 msgid "Credits"
-msgstr "Créditos"
+msgstr ""
 
 #: ../../../AUTHORS.rst:6
 msgid "Development Lead"
-msgstr "Líder de desarrollo"
+msgstr ""
 
 #: ../../../AUTHORS.rst:11
 msgid "Contributors"
-msgstr "Colaboradores"
+msgstr ""
 
 #: ../../../AUTHORS.rst:13
 msgid "None yet. Why not be the first?"
-msgstr "Ninguna todavia. Por que no ser el primero?"
+msgstr ""
