@@ -289,17 +289,15 @@ See the LICENSE file for specific terms.
 Original
 ========
 
-This utilty is derived from these projects.
+This utilty is derived from this project.
 
 * https://pypi.org/project/sphinx-intl
-* https://bitbucket.org/tk0miya/sphinx-gettext-helper
-* https://bitbucket.org/shimizukawa/sphinx-transifex
 
 
 CHANGES
 =======
 
-See: https://github.com/sphinx-doc/potranslator/blob/master/CHANGES
+See: https://github.com/sphinx-doc/potranslator/blob/master/HISTORY.rst
 
 .. _Sphinx: http://sphinx-doc.org
 .. _sphinx-intl: https://pypi.org/project/sphinx-intl
