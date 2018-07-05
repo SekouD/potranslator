@@ -82,6 +82,7 @@ class PoTranslator:
 
     def translate_all_locale(self, src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
         """
+        Translates all the po files in the found languages in the locale folder.
 
         :param src_lang: string.
             Source language for translation.
@@ -110,6 +111,7 @@ class PoTranslator:
 
     def translate_from_pot(self, filename, status, target_langs, src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
         """
+        Translates the given pot file in the specified target languages.
 
         :param filename: string.
             Path to the filename of the file to translate.
@@ -151,6 +153,7 @@ class PoTranslator:
 
     def translate_all_pot(self, target_langs, src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
         """
+        Translates all the pot files in the pot folder in the specified target languages.
 
         :param target_langs: sequence of strings.
             Target language for translation.
