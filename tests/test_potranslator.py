@@ -23,7 +23,9 @@ from potranslator import commands
 
 
 is_python2 = sys.version_info < (3, 0)
-__dir__ = path(os.path.dirname(os.path.abspath(__file__)))
+__dir__ = path(os.path.dirname('./tests/'))
+print('test')
+pass
 
 
 @pytest.fixture(scope="function")
