@@ -223,6 +223,10 @@ class TestCommandLine:
         assert r4.output.count('Update:') == 0
         assert r4.output.count('Not Changed:') == 1
 
+    # def test_update_with_conf_file(self, temp):
+    #     r1 = runner.invoke(commands.update, ['-d', 'locale', '-p', '_build/locale', '-l', 'ja'])
+    #     assert r1.exit_code == 0
+
     def test_stat(self, temp):
         r1 = runner.invoke(commands.update, ['-d', 'locale', '-p', '_build/locale', '-l', 'ja'])
         assert r1.exit_code == 0
