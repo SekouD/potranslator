@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, SekouD
+# This file is distributed under the same license as the potranslator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: potranslator 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 13:52+0200\n"
+"PO-Revision-Date: 2018-07-05 15:06+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translated-By: potranslator 0.2.0\n"
+"Last-Translator: SekouD <sekoud.python@gmail.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.0.8\n"
+
+#: ../../installation.rst:5
+msgid "Installation"
+msgstr "Installation"
+
+#: ../../installation.rst:9
+msgid "Stable release"
+msgstr "Version stable"
+
+#: ../../installation.rst:11
+msgid "To install potranslator, run this command in your terminal:"
+msgstr ""
+"Pour installer potranslator, exécutez cette commande dans votre terminal:"
+
+#: ../../installation.rst:17
+msgid ""
+"This is the preferred method to install potranslator, as it will always "
+"install the most recent stable release."
+msgstr ""
+"C'est la méthode préférée pour installer potranslator, car elle installera "
+"toujours la dernière version stable."
+
+#: ../../installation.rst:19
+msgid ""
+"If you don't have `pip`_ installed, this `Python installation guide`_ can "
+"guide you through the process."
+msgstr ""
+"Si vous n'avez pas installé `pip`_, ce` Guide d'installation Python`_ peut "
+"vous guider tout au long du processus."
+
+#: ../../installation.rst:27
+msgid "From sources"
+msgstr "Depuis le code source"
+
+#: ../../installation.rst:29
+msgid ""
+"The sources for potranslator can be downloaded from the `Github repo`_."
+msgstr ""
+"Le code source de Potranslator peut être téléchargé à partir du `Github "
+"repo`_."
+
+#: ../../installation.rst:31
+msgid "You can either clone the public repository:"
+msgstr "Vous pouvez soit cloner le référentiel public:"
+
+#: ../../installation.rst:37
+msgid "Or download the `tarball`_:"
+msgstr "Ou téléchargez l' `archive`_:"
+
+#: ../../installation.rst:43
+msgid "Once you have a copy of the source, you can install it with:"
+msgstr ""
+"Une fois que vous avez une copie du code source, vous pouvez l'installer "
+"avec:"

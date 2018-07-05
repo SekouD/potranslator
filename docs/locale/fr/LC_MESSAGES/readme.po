@@ -1,0 +1,732 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, SekouD
+# This file is distributed under the same license as the potranslator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: potranslator 0.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-05 13:52+0200\n"
+"PO-Revision-Date: 2018-07-05 15:31+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translated-By: potranslator 0.2.0\n"
+"Last-Translator: SekouD <sekoud.python@gmail.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"X-Generator: Poedit 2.0.8\n"
+
+#: ../../../README.rst:3
+msgid "potranslator"
+msgstr "potranslator"
+
+#: ../../../README.rst:36
+msgid ""
+"`potranslator` is a package to easily translate po and pot files generated "
+"by Sphinx_ or other tools in any language supported by Google Translate. | "
+"The Command Line Interface of `potranslator` follows the same pattern as "
+"sphinx-intl_."
+msgstr ""
+"`potranslator` est un package/librairie permettant de traduire facilement "
+"des fichiers po et pot générés par Sphinx_ ou d'autres outils dans "
+"n'importe quelle langue supportée par Google Translate. | L'interface de "
+"ligne de commande de `potranslator` suit le même schéma que sphinx-intl_."
+
+#: ../../../README.rst:39
+msgid ""
+"Optional: supports the Transifex collaborative service to upload the auto-"
+"generated translations to transifex_ for collaborative corrections of the "
+"translations."
+msgstr ""
+"Facultatif: prend en charge le service collaboratif Transifex pour "
+"télécharger les traductions générées automatiquement vers transifex_ pour "
+"les corrections collaboratives des traductions."
+
+#: ../../../README.rst:43
+msgid "Supported Languages"
+msgstr "Langues supportées"
+
+#: ../../../README.rst:45
+msgid "Afrikaans     af"
+msgstr "Afrikaans af"
+
+#: ../../../README.rst:46
+msgid "Albanian      sq"
+msgstr "Albanais sq"
+
+#: ../../../README.rst:47
+msgid "Amharic       am"
+msgstr "Amharic am"
+
+#: ../../../README.rst:48
+msgid "Arabic        ar"
+msgstr "Arabe ar"
+
+#: ../../../README.rst:49
+msgid "Armenian      hy"
+msgstr "Arménien hy"
+
+#: ../../../README.rst:50
+msgid "Azeerbaijani  az"
+msgstr "Azerbaïdjanais az"
+
+#: ../../../README.rst:51
+msgid "Basque        eu"
+msgstr "Basque eu"
+
+#: ../../../README.rst:52
+msgid "Belarusian    be"
+msgstr "Bélarusse be"
+
+#: ../../../README.rst:53
+msgid "Bengali       bn"
+msgstr "Bengali bn"
+
+#: ../../../README.rst:54
+msgid "Bosnian       bs"
+msgstr "Bosniaque bs"
+
+#: ../../../README.rst:55
+msgid "Bulgarian     bg"
+msgstr "Bulgare bg"
+
+#: ../../../README.rst:56
+msgid "Catalan       ca"
+msgstr "Catalan ca"
+
+#: ../../../README.rst:57
+msgid "Cebuano       ceb (ISO-639-2)"
+msgstr "Cebuano ceb (ISO-639-2)"
+
+#: ../../../README.rst:58
+msgid "Chinese (Simplified)  zh-CN (BCP-47)"
+msgstr "Chinois (simplifié) zh-CN (BCP-47)"
+
+#: ../../../README.rst:59
+msgid "Chinese (Traditional) zh-TW (BCP-47)"
+msgstr "Chinois (traditionnel) zh-TW (BCP-47)"
+
+#: ../../../README.rst:60
+msgid "Corsican      co"
+msgstr "Corse co"
+
+#: ../../../README.rst:61
+msgid "Croatian      hr"
+msgstr "Croate hr"
+
+#: ../../../README.rst:62
+msgid "Czech cs"
+msgstr "Tchèque cs"
+
+#: ../../../README.rst:63
+msgid "Danish        da"
+msgstr "Danish da"
+
+#: ../../../README.rst:64
+msgid "Dutch nl"
+msgstr "Néerlandais nl"
+
+#: ../../../README.rst:65
+msgid "English       en"
+msgstr "Anglais en"
+
+#: ../../../README.rst:66
+msgid "Esperanto     eo"
+msgstr "Esperanto eo"
+
+#: ../../../README.rst:67
+msgid "Estonian      et"
+msgstr "Estonien et"
+
+#: ../../../README.rst:68
+msgid "Finnish       fi"
+msgstr "Finlandais fi"
+
+#: ../../../README.rst:69
+msgid "French        fr"
+msgstr "Français fr"
+
+#: ../../../README.rst:70
+msgid "Frisian       fy"
+msgstr "Frisien fy"
+
+#: ../../../README.rst:71
+msgid "Galician      gl"
+msgstr "Galicien gl"
+
+#: ../../../README.rst:72
+msgid "Georgian      ka"
+msgstr "Géorgien Ka"
+
+#: ../../../README.rst:73
+msgid "German        de"
+msgstr "Allemand de"
+
+#: ../../../README.rst:74
+msgid "Greek el"
+msgstr "Grec el"
+
+#: ../../../README.rst:75
+msgid "Gujarati      gu"
+msgstr "Gujarati gu"
+
+#: ../../../README.rst:76
+msgid "Haitian Creole        ht"
+msgstr "Créole Haïtien ht"
+
+#: ../../../README.rst:77
+msgid "Hausa ha"
+msgstr "Hausa ha"
+
+#: ../../../README.rst:78
+msgid "Hawaiian      haw (ISO-639-2)"
+msgstr "Hawaïen haw (ISO-639-2)"
+
+#: ../../../README.rst:79
+msgid "Hebrew        iw"
+msgstr "Hébreu iw"
+
+#: ../../../README.rst:80
+msgid "Hindi hi"
+msgstr "Hindi hi"
+
+#: ../../../README.rst:81
+msgid "Hmong hmn (ISO-639-2)"
+msgstr "Hmong hmn (ISO-639-2)"
+
+#: ../../../README.rst:82
+msgid "Hungarian     hu"
+msgstr "Hongrois hu"
+
+#: ../../../README.rst:83
+msgid "Icelandic     is"
+msgstr "Islandais is"
+
+#: ../../../README.rst:84
+msgid "Igbo  ig"
+msgstr "Igbo ig"
+
+#: ../../../README.rst:85
+msgid "Indonesian    id"
+msgstr "Indonésien id"
+
+#: ../../../README.rst:86
+msgid "Irish ga"
+msgstr "Irlandais ga"
+
+#: ../../../README.rst:87
+msgid "Italian       it"
+msgstr "Italien it"
+
+#: ../../../README.rst:88
+msgid "Japanese      ja"
+msgstr "Japonais ja"
+
+#: ../../../README.rst:89
+msgid "Javanese      jw"
+msgstr "Javanais jw"
+
+#: ../../../README.rst:90
+msgid "Kannada       kn"
+msgstr "Kannada kn"
+
+#: ../../../README.rst:91
+msgid "Kazakh        kk"
+msgstr "Kazakh kk"
+
+#: ../../../README.rst:92
+msgid "Khmer km"
+msgstr "Khmer km"
+
+#: ../../../README.rst:93
+msgid "Korean        ko"
+msgstr "Coréen ko"
+
+#: ../../../README.rst:94
+msgid "Kurdish       ku"
+msgstr "Kurde ku"
+
+#: ../../../README.rst:95
+msgid "Kyrgyz        ky"
+msgstr "Kirghize ky"
+
+#: ../../../README.rst:96
+msgid "Lao   lo"
+msgstr "Laotien lo"
+
+#: ../../../README.rst:97
+msgid "Latin la"
+msgstr "Latin la"
+
+#: ../../../README.rst:98
+msgid "Latvian       lv"
+msgstr "Letton lv"
+
+#: ../../../README.rst:99
+msgid "Lithuanian    lt"
+msgstr "Lituanien lt"
+
+#: ../../../README.rst:100
+msgid "Luxembourgish lb"
+msgstr "Luxembourgeois lb"
+
+#: ../../../README.rst:101
+msgid "Macedonian    mk"
+msgstr "Macédonien mk"
+
+#: ../../../README.rst:102
+msgid "Malagasy      mg"
+msgstr "Malgache mg"
+
+#: ../../../README.rst:103
+msgid "Malay ms"
+msgstr "Malais ms"
+
+#: ../../../README.rst:104
+msgid "Malayalam     ml"
+msgstr "Malayalam ml"
+
+#: ../../../README.rst:105
+msgid "Maltese       mt"
+msgstr "Maltais mt"
+
+#: ../../../README.rst:106
+msgid "Maori mi"
+msgstr "Maori mi"
+
+#: ../../../README.rst:107
+msgid "Marathi       mr"
+msgstr "Marathi mr"
+
+#: ../../../README.rst:108
+msgid "Mongolian     mn"
+msgstr "Mongol mn"
+
+#: ../../../README.rst:109
+msgid "Myanmar (Burmese)     my"
+msgstr "Myanmar (Birmanie) my"
+
+#: ../../../README.rst:110
+msgid "Nepali        ne"
+msgstr "Nepali ne"
+
+#: ../../../README.rst:111
+msgid "Norwegian     no"
+msgstr "Norvégien no"
+
+#: ../../../README.rst:112
+msgid "Nyanja (Chichewa)     ny"
+msgstr "Nyanja (Chichewa) ny"
+
+#: ../../../README.rst:113
+msgid "Pashto        ps"
+msgstr "Pashtoun ps"
+
+#: ../../../README.rst:114
+msgid "Persian       fa"
+msgstr "Persan fa"
+
+#: ../../../README.rst:115
+msgid "Polish        pl"
+msgstr "Polonais pl"
+
+#: ../../../README.rst:116
+msgid "Portuguese (Portugal, Brazil) pt"
+msgstr "Portugais (Portugal, Brésil) pt"
+
+#: ../../../README.rst:117
+msgid "Punjabi       pa"
+msgstr "Punjabi pa"
+
+#: ../../../README.rst:118
+msgid "Romanian      ro"
+msgstr "Roumain ro"
+
+#: ../../../README.rst:119
+msgid "Russian       ru"
+msgstr "Russe ru"
+
+#: ../../../README.rst:120
+msgid "Samoan        sm"
+msgstr "Samoan sm"
+
+#: ../../../README.rst:121
+msgid "Scots Gaelic  gd"
+msgstr "Écossais gaélique gd"
+
+#: ../../../README.rst:122
+msgid "Serbian       sr"
+msgstr "Serbe sr"
+
+#: ../../../README.rst:123
+msgid "Sesotho       st"
+msgstr "Sesotho st"
+
+#: ../../../README.rst:124
+msgid "Shona sn"
+msgstr "Shona sn"
+
+#: ../../../README.rst:125
+msgid "Sindhi        sd"
+msgstr "Sindhi sd"
+
+#: ../../../README.rst:126
+msgid "Sinhala (Sinhalese)   si"
+msgstr "Sinhala (Sinhalais) si"
+
+#: ../../../README.rst:127
+msgid "Slovak        sk"
+msgstr "Slovaque sk"
+
+#: ../../../README.rst:128
+msgid "Slovenian     sl"
+msgstr "Slovène sl"
+
+#: ../../../README.rst:129
+msgid "Somali        so"
+msgstr "Somalien so"
+
+#: ../../../README.rst:130
+msgid "Spanish       es"
+msgstr "Espagnol es"
+
+#: ../../../README.rst:131
+msgid "Sundanese     su"
+msgstr "Soudanais su"
+
+#: ../../../README.rst:132
+msgid "Swahili       sw"
+msgstr "Swahili sw"
+
+#: ../../../README.rst:133
+msgid "Swedish       sv"
+msgstr "Suédois sv"
+
+#: ../../../README.rst:134
+msgid "Tagalog (Filipino)    tl"
+msgstr "Tagalog (Philippin) tl"
+
+#: ../../../README.rst:135
+msgid "Tajik tg"
+msgstr "Tajik tg"
+
+#: ../../../README.rst:136
+msgid "Tamil ta"
+msgstr "Tamil ta"
+
+#: ../../../README.rst:137
+msgid "Telugu        te"
+msgstr "Telugu te"
+
+#: ../../../README.rst:138
+msgid "Thai  th"
+msgstr "Thai th"
+
+#: ../../../README.rst:139
+msgid "Turkish       tr"
+msgstr "Turc tr"
+
+#: ../../../README.rst:140
+msgid "Ukrainian     uk"
+msgstr "Ukrainien uk"
+
+#: ../../../README.rst:141
+msgid "Urdu  ur"
+msgstr "Ourdou ur"
+
+#: ../../../README.rst:142
+msgid "Uzbek uz"
+msgstr "Uzbek uz"
+
+#: ../../../README.rst:143
+msgid "Vietnamese    vi"
+msgstr "Vietnamien vi"
+
+#: ../../../README.rst:144
+msgid "Welsh cy"
+msgstr "Gallois cy"
+
+#: ../../../README.rst:145
+msgid "Xhosa xh"
+msgstr "Xhosa xh"
+
+#: ../../../README.rst:146
+msgid "Yiddish       yi"
+msgstr "Yiddish yi"
+
+#: ../../../README.rst:147
+msgid "Yoruba        yo"
+msgstr "Yoruba yo"
+
+#: ../../../README.rst:148
+msgid "Zulu  zu"
+msgstr "Zulu zu"
+
+#: ../../../README.rst:156
+msgid "QuickStart for auto-translation with potranslator"
+msgstr "Guide Rapide pour la traduction automatique avec Potranslator"
+
+#: ../../../README.rst:158
+msgid ""
+"This section describes how to translate documents generated with Sphinx_ "
+"with the `potranslator` command."
+msgstr ""
+"Cette section décrit comment traduire les documents générés par Sphinx_ "
+"avec la commande `potranslator`."
+
+#: ../../../README.rst:160
+msgid "Create your document(s) by using Sphinx::"
+msgstr "Créez vos/votre document(s) en utilisant Sphinx ::"
+
+#: ../../../README.rst:164
+msgid "Optionally add the settings to your `conf.py` if you have one::"
+msgstr ""
+"Ajoutez éventuellement les paramètres à votre `conf.py` si vous en avez "
+"un ::"
+
+#: ../../../README.rst:169
+msgid "`locale_dirs` is required and `gettext_compact` is optional."
+msgstr "`locale_dirs` est requis et` gettext_compact` est optionnel."
+
+#: ../../../README.rst:171
+msgid ""
+"Extract the document's translatable messages into pot files (make sure you "
+"are in the folder containing `make.bat` and `Makefile` if you are on "
+"windows)::"
+msgstr ""
+"Extrayez les messages traduisibles du document dans des fichiers pot "
+"(assurez-vous que vous êtes dans le dossier contenant `make.bat` et` "
+"Makefile` si vous êtes sous Windows):"
+
+#: ../../../README.rst:175
+msgid "Translate/Update your documents in German and Japanese::"
+msgstr "Traduire / Mettre à jour vos documents en allemand et en japonais ::"
+
+#: ../../../README.rst:179
+msgid ""
+"Done. You got these directories that contain po files with auto-translated "
+"entries:"
+msgstr ""
+"Terminé. Vous avez ces répertoires qui contiennent des fichiers po avec des "
+"entrées traduites automatiquement:"
+
+#: ../../../README.rst:181
+msgid "`./locale/de/LC_MESSAGES/`"
+msgstr "`. / locale / de / LC_MESSAGES /`"
+
+#: ../../../README.rst:182
+msgid "`./locale/ja/LC_MESSAGES/`"
+msgstr "`. / locale / ja / LC_MESSAGES /`"
+
+#: ../../../README.rst:184
+msgid ""
+"Translate/Update your documents in Japanese and Build the compiled mo "
+"files::"
+msgstr ""
+"Traduisez / Mettez à jour vos documents en japonais et créez les fichiers "
+"mo compilés ::"
+
+#: ../../../README.rst:189
+msgid "That's all!"
+msgstr "C'est tout!"
+
+#: ../../../README.rst:193
+msgid "Basic Features"
+msgstr "Fonctionnalités de base"
+
+#: ../../../README.rst:195
+msgid "Translate or update po files from pot files."
+msgstr "Traduire ou mettre à jour des fichiers po à partir de fichiers pot."
+
+#: ../../../README.rst:196
+msgid "Build mo files from po or pot files."
+msgstr "Compiler des fichiers mo à partir de fichiers po ou pot."
+
+#: ../../../README.rst:199
+msgid "Requirements for the basic features"
+msgstr "Exigences pour les fonctionnalités de base"
+
+#: ../../../README.rst:201
+msgid "Python 3.6, 3.5, 3.4, 2.7, pypy."
+msgstr "Python 3.6, 3.5, 3.4, 2.7, pypy."
+
+#: ../../../README.rst:202
+msgid ""
+"external library: setuptools_, six_, babel_, click_, googletrans_, polib_"
+msgstr ""
+"librairie externe: setuptools, six, babel_, click_id, googletrans_, polib_"
+
+#: ../../../README.rst:206
+msgid "Optional features"
+msgstr "Fonctionnalités optionnelles"
+
+#: ../../../README.rst:207
+msgid "These features need the `transifex-client`_ library."
+msgstr "Ces fonctionnalités nécessitent la bibliothèque `transifex-client`_."
+
+#: ../../../README.rst:209
+msgid ""
+"create .transifexrc file from environment variable, without interactive "
+"input."
+msgstr ""
+"crée le fichier .transifexrc à partir de la variable d'environnement, sans "
+"entrée interactive."
+
+#: ../../../README.rst:211
+msgid "create .tx/config file without interactive input."
+msgstr "créer un fichier .tx / config sans entrée interactive."
+
+#: ../../../README.rst:212
+msgid "update .tx/config file from locale/pot files automatically."
+msgstr ""
+"mettre à jour le fichier .tx / config à partir des fichiers locale / pot "
+"automatiquement."
+
+#: ../../../README.rst:213
+msgid "build mo files from po files in the locale directory."
+msgstr ""
+"Compiler des fichiers mo à partir de fichiers po dans le répertoire locale."
+
+#: ../../../README.rst:215
+msgid "You need to use the `tx` command for below features:"
+msgstr ""
+"Vous devez utiliser la commande `tx` pour les fonctionnalités suivantes:"
+
+#: ../../../README.rst:217
+msgid "`tx push -s` : push pot (translation catalogs) to transifex."
+msgstr "`tx push -s`: push pot (catalogues de traduction) vers transifex."
+
+#: ../../../README.rst:218
+msgid "`tx pull -l ja` : pull po (translated catalogs) from transifex."
+msgstr "`tx pull -l ja`: tire po (catalogues traduits) de transifex."
+
+#: ../../../README.rst:221
+msgid "Requirements for the optional features"
+msgstr "Exigences pour les fonctionnalités optionnelles"
+
+#: ../../../README.rst:223
+msgid ""
+"Your transifex_ account if you want to upload/download po files from "
+"transifex."
+msgstr ""
+"Votre compte transifex_ si vous voulez télécharger des fichiers po vers "
+"transifex."
+
+#: ../../../README.rst:225
+msgid "external library: `transifex-client`_"
+msgstr "librairie externe: `transifex-client`_"
+
+#: ../../../README.rst:229
+msgid "Installation"
+msgstr "Installation"
+
+#: ../../../README.rst:231
+msgid "Recommended strongly: use virtualenv for this procedure::"
+msgstr "Fortement recommandé: utilisez virtualenv pour cette procédure:"
+
+#: ../../../README.rst:235
+msgid ""
+"If you want to use the `Optional Features`_, you need install this "
+"additional library::"
+msgstr ""
+"Si vous souhaitez utiliser les `fonctions optionnelles`_, vous devez "
+"installer cette bibliothèque supplémentaire:"
+
+#: ../../../README.rst:241
+msgid "Commands, options, environment variables"
+msgstr "Commandes, options, variables d'environnement"
+
+#: ../../../README.rst:244
+msgid "Commands"
+msgstr "Commandes"
+
+#: ../../../README.rst:246
+msgid "Type `potranslator` without arguments to show the help instructions."
+msgstr ""
+"Tapez `potranslator` sans arguments pour afficher les instructions d'aide."
+
+#: ../../../README.rst:250
+msgid "Setup environment variables"
+msgstr "Configurer les variables d'environnement"
+
+#: ../../../README.rst:252
+msgid ""
+"All command-line options can be set with environment variables using the "
+"format POTRANSLATOR_<UPPER_LONG_NAME> . Dashes (-) have to replaced with "
+"underscores (_)."
+msgstr ""
+"Toutes les options de ligne de commande peuvent être définies avec des "
+"variables d'environnement en utilisant le format POTRANSLATOR_ "
+"<NOM_EN_MAJUSCULE>. Les tirets (-) doivent être remplacés par des traits de "
+"soulignement (_)."
+
+#: ../../../README.rst:256
+msgid "For example, to set the languages::"
+msgstr "Par exemple, pour définir les langues ::"
+
+#: ../../../README.rst:260
+msgid "This is the same as passing the option to potranslator directly::"
+msgstr "C'est équivalent à passer l'option à potranslator directement ::"
+
+#: ../../../README.rst:266
+msgid "Setup sphinx conf.py"
+msgstr "Configurer sphinx conf.py"
+
+#: ../../../README.rst:268
+msgid ""
+"Add the following settings to your sphinx document's conf.py if it exists::"
+msgstr ""
+"Ajoutez les paramètres suivants au fichier conf.py de votre document sphinx "
+"s'il existe:"
+
+#: ../../../README.rst:275
+msgid "Setup Makefile / make.bat"
+msgstr "Configurer Makefile / make.bat"
+
+#: ../../../README.rst:277
+msgid ""
+"`make gettext` will generate pot files into `_build/gettext` directory, "
+"however pot files can be generated in the `locale/pot` if convenient. You "
+"can do that by replacing `_build/gettext` with `locale/pot` in your "
+"`Makefile` and/or `make.bat` that was generated by sphinx-quickstart."
+msgstr ""
+"`make gettext` va générer des fichiers pot dans le répertoire` _build / "
+"gettext`, mais les fichiers pot peuvent être générés dans `locale / pot` si "
+"cela est plus pratique. Vous pouvez le faire en remplaçant `_build / "
+"gettext` par` locale / pot` dans votre `Makefile` et / ou ` make.bat` qui a "
+"été généré par sphinx-quickstart ou sphinx-build."
+
+#: ../../../README.rst:284
+msgid "License"
+msgstr "Licence"
+
+#: ../../../README.rst:285
+msgid ""
+"Licensed under the BSD license. See the LICENSE file for specific terms."
+msgstr ""
+"Licencié sous la licence BSD. Voir le fichier LICENCE pour des termes "
+"spécifiques."
+
+#: ../../../README.rst:290
+msgid "Original"
+msgstr "Original"
+
+#: ../../../README.rst:292
+msgid "This utilty is derived from this project."
+msgstr "Cet utilitaire est dérivé de ce projet."
+
+#: ../../../README.rst:294
+msgid "https://pypi.org/project/sphinx-intl"
+msgstr "https://pypi.org/project/sphinx-intl"
+
+#: ../../../README.rst:298
+msgid "CHANGES"
+msgstr "CHANGEMENTS"
+
+#: ../../../README.rst:300
+msgid ""
+"See: https://github.com/sphinx-doc/potranslator/blob/master/HISTORY.rst"
+msgstr ""
+"Voir: https://github.com/sphinx-doc/potranslator/blob/master/HISTORY.rst"
