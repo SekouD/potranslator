@@ -11,7 +11,11 @@ from copy import deepcopy
 from codecs import open
 import sys
 import click
-from json.decoder import JSONDecodeError
+
+try:
+    from json.decoder import JSONDecodeError
+except ImportError:
+    pass
 
 _RESOURCE_PACKAGE = __name__
 

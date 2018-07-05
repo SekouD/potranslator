@@ -59,7 +59,6 @@ setup(
         'Operating System :: MacOS',
         'Operating System :: Microsoft',
         'Operating System :: POSIX',
-        'Operating System :: UNIX',
         'Natural Language :: Afrikaans', 'Natural Language :: Amharic', 'Natural Language :: Arabic',
         'Natural Language :: Azeerbaijani', 'Natural Language :: Belarusian', 'Natural Language :: Bulgarian',
         'Natural Language :: Bengali', 'Natural Language :: Bosnian', 'Natural Language :: Catalan',
