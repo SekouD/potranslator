@@ -63,7 +63,6 @@ setup(
         'Natural Language :: Greek', 'Natural Language :: English', 'Natural Language :: French',
         'Natural Language :: Italian', 'Natural Language :: Japanese',
         'Natural Language :: Chinese (Simplified)',
-        'Natural Language :: Zulu',
         "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
