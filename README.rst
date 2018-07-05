@@ -149,8 +149,8 @@ Supported Languages
 
 
 
-QuickStart for auto-translation with potranslator
-=================================================
+Quick Start for auto-translation with potranslator
+==================================================
 
 This section describes how to translate documents generated with Sphinx_ with the `potranslator` command.
 
