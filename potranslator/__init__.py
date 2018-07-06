@@ -29,7 +29,7 @@ with importlib_resources.path(_RESOURCE_PACKAGE, 'locale') as path:
 with importlib_resources.path(_RESOURCE_PACKAGE, 'supported_languages.json') as path:
     json_file = path
 
-with open(json_file, 'r', encoding='utf-8') as file:
+with open(json_file.as_posix(), 'r', encoding='utf-8') as file:
     SUPPORTED_LANGUAGES = json.load(file)
 
 _TRANSLATED_LANGUAGES = [key for key in SUPPORTED_LANGUAGES if key != 'en']
