@@ -4,7 +4,7 @@
 
 from os import listdir, makedirs
 from os.path import isfile, join, exists
-from . import polib, Translator, pkg_resources, json
+from . import polib, Translator, json
 from . import SUPPORTED_LANGUAGES, __version__
 from collections import defaultdict
 from copy import deepcopy
