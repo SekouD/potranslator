@@ -15,6 +15,7 @@ requirements = ['Click>=6.0',
                 'googletrans==2.3.0',
                 'polib==1.1.0',
                 'path.py==11.0.1',
+                'importlib_resources==1.0.1',
                 ]
 
 setup_requirements = ['pytest-runner', ]
@@ -33,6 +34,7 @@ test_requirements = ['pip==10.0.1',
                      'twine==1.11.0',
                      'googletrans==2.3.0',
                      'polib==1.1.0',
+                     'importlib_resources==1.0.1',
                      ]
 
 extras_require = {
@@ -42,6 +44,7 @@ extras_require = {
 }
 
 setup(
+    version='1.0.5',
     author="SekouD",
     author_email='sekoud.python@gmail.com',
     classifiers=[
@@ -90,6 +93,5 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/SekouD/potranslator',
-    version='1.0.5',
     zip_safe=False,
 )
