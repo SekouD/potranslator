@@ -4,7 +4,7 @@
 
 from .potranslator import PoTranslator
 from .polib import POFile
-from pathlib import WindowsPath
+from pathlib import Path
 from typing import Text, Tuple, Any
 import gettext
 
@@ -17,8 +17,8 @@ __license__: Text
 __maintainer__: Text
 __status__: Text
 _RESOURCE_PACKAGE: Text = __name__
-_TRANSLATIONS_PATH: WindowsPath
-json_file: WindowsPath
+_TRANSLATIONS_PATH: Path
+json_file: Path
 SUPPORTED_LANGUAGES: Tuple[Text]
 _TRANSLATED_LANGUAGES: Tuple[Text]
 _user_locale: Text
