@@ -17,7 +17,7 @@ To install potranslator, run this command in your terminal:
 This is the preferred method to install potranslator, as it will always install the most recent stable release.
 
 
-If you want to use the `Optional Features`_, you need install this additional library:
+If you want to use the `Optional Features`_, you need to install this additional library transifex-client_:
 
 .. code-block:: console
 
@@ -29,6 +29,7 @@ you through the process.
 .. _pip: https://pip.pypa.io
 .. _Python installation guide: http://docs.python-guide.org/en/latest/starting/installation/
 .. _Optional Features: https://potranslator.readthedocs.io/en/latest/readme.html#optional-features
+.. _transifex-client: https://pypi.python.org/pypi/transifex-client
 
 
 From sources

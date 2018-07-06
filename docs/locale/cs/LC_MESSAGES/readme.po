@@ -10,15 +10,17 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-05 13:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: 2018-07-05\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Translated-By: potranslator 1.0.3\n"
 
 #: ../../../README.rst:3
 msgid "potranslator"
-msgstr ""
+msgstr "překladatel"
 
 #: ../../../README.rst:36
 msgid ""
@@ -27,6 +29,10 @@ msgid ""
 "The Command Line Interface of `potranslator` follows the same pattern as "
 "sphinx-intl_."
 msgstr ""
+"`překladatel` je balíček, který snadno přeloží soubory po a pot generované "
+"nástrojem Sphinx_ nebo jinými nástroji v libovolném jazyce podporovaném "
+"službou Google Translate. | Rozhraní příkazového řádku `přepočítače` "
+"následuje stejným vzorem jako sphinx-intl_."
 
 #: ../../../README.rst:39
 msgid ""
@@ -34,448 +40,453 @@ msgid ""
 "generated translations to transifex_ for collaborative corrections of the "
 "translations."
 msgstr ""
+"Volitelně: podporuje službu spolupráce společnosti Transifex k nahrání "
+"automatických generovaných překladů do transifex_ pro korektivní opravy "
+"překladů."
 
 #: ../../../README.rst:43
 msgid "Supported Languages"
-msgstr ""
+msgstr "Podporované jazyky"
 
 #: ../../../README.rst:45
 msgid "Afrikaans     af"
-msgstr ""
+msgstr "Afrikaans af"
 
 #: ../../../README.rst:46
 msgid "Albanian      sq"
-msgstr ""
+msgstr "Albánský čtverečník"
 
 #: ../../../README.rst:47
 msgid "Amharic       am"
-msgstr ""
+msgstr "Amharské am"
 
 #: ../../../README.rst:48
 msgid "Arabic        ar"
-msgstr ""
+msgstr "Arabština ar"
 
 #: ../../../README.rst:49
 msgid "Armenian      hy"
-msgstr ""
+msgstr "Armenian hy"
 
 #: ../../../README.rst:50
 msgid "Azeerbaijani  az"
-msgstr ""
+msgstr "Azerbaijani az"
 
 #: ../../../README.rst:51
 msgid "Basque        eu"
-msgstr ""
+msgstr "Baskické eu"
 
 #: ../../../README.rst:52
 msgid "Belarusian    be"
-msgstr ""
+msgstr "Běloruské"
 
 #: ../../../README.rst:53
 msgid "Bengali       bn"
-msgstr ""
+msgstr "Bengálská mld"
 
 #: ../../../README.rst:54
 msgid "Bosnian       bs"
-msgstr ""
+msgstr "Bosenský bs"
 
 #: ../../../README.rst:55
 msgid "Bulgarian     bg"
-msgstr ""
+msgstr "Bulharský bg"
 
 #: ../../../README.rst:56
 msgid "Catalan       ca"
-msgstr ""
+msgstr "Katalánština ca"
 
 #: ../../../README.rst:57
 msgid "Cebuano       ceb (ISO-639-2)"
-msgstr ""
+msgstr "Cebuano ceb (ISO-639-2)"
 
 #: ../../../README.rst:58
 msgid "Chinese (Simplified)  zh-CN (BCP-47)"
-msgstr ""
+msgstr "Čínština (zjednodušená) zh-CN (BCP-47)"
 
 #: ../../../README.rst:59
 msgid "Chinese (Traditional) zh-TW (BCP-47)"
-msgstr ""
+msgstr "Čínština (tradiční) zh-TW (BCP-47)"
 
 #: ../../../README.rst:60
 msgid "Corsican      co"
-msgstr ""
+msgstr "Korsican co"
 
 #: ../../../README.rst:61
 msgid "Croatian      hr"
-msgstr ""
+msgstr "Chorvatský hr"
 
 #: ../../../README.rst:62
 msgid "Czech cs"
-msgstr ""
+msgstr "Český cs"
 
 #: ../../../README.rst:63
 msgid "Danish        da"
-msgstr ""
+msgstr "Dánština da"
 
 #: ../../../README.rst:64
 msgid "Dutch nl"
-msgstr ""
+msgstr "Holandština nl"
 
 #: ../../../README.rst:65
 msgid "English       en"
-msgstr ""
+msgstr "Anglicky en"
 
 #: ../../../README.rst:66
 msgid "Esperanto     eo"
-msgstr ""
+msgstr "Esperanto eo"
 
 #: ../../../README.rst:67
 msgid "Estonian      et"
-msgstr ""
+msgstr "Estonian et"
 
 #: ../../../README.rst:68
 msgid "Finnish       fi"
-msgstr ""
+msgstr "Finština fi"
 
 #: ../../../README.rst:69
 msgid "French        fr"
-msgstr ""
+msgstr "Francouzština fr"
 
 #: ../../../README.rst:70
 msgid "Frisian       fy"
-msgstr ""
+msgstr "Frisian fy"
 
 #: ../../../README.rst:71
 msgid "Galician      gl"
-msgstr ""
+msgstr "Galician gl"
 
 #: ../../../README.rst:72
 msgid "Georgian      ka"
-msgstr ""
+msgstr "Georgian ka"
 
 #: ../../../README.rst:73
 msgid "German        de"
-msgstr ""
+msgstr "Německy de"
 
 #: ../../../README.rst:74
 msgid "Greek el"
-msgstr ""
+msgstr "Řecký el"
 
 #: ../../../README.rst:75
 msgid "Gujarati      gu"
-msgstr ""
+msgstr "Gujarati gu"
 
 #: ../../../README.rst:76
 msgid "Haitian Creole        ht"
-msgstr ""
+msgstr "Haitian Creole ht"
 
 #: ../../../README.rst:77
 msgid "Hausa ha"
-msgstr ""
+msgstr "Hausa ha"
 
 #: ../../../README.rst:78
 msgid "Hawaiian      haw (ISO-639-2)"
-msgstr ""
+msgstr "Havajský haw (ISO-639-2)"
 
 #: ../../../README.rst:79
 msgid "Hebrew        iw"
-msgstr ""
+msgstr "Hebrejsky i"
 
 #: ../../../README.rst:80
 msgid "Hindi hi"
-msgstr ""
+msgstr "Hindi hi"
 
 #: ../../../README.rst:81
 msgid "Hmong hmn (ISO-639-2)"
-msgstr ""
+msgstr "Hmong hmn (ISO-639-2)"
 
 #: ../../../README.rst:82
 msgid "Hungarian     hu"
-msgstr ""
+msgstr "Maďarský hu"
 
 #: ../../../README.rst:83
 msgid "Icelandic     is"
-msgstr ""
+msgstr "Islanďan je"
 
 #: ../../../README.rst:84
 msgid "Igbo  ig"
-msgstr ""
+msgstr "Igbo ig"
 
 #: ../../../README.rst:85
 msgid "Indonesian    id"
-msgstr ""
+msgstr "Indonéské id"
 
 #: ../../../README.rst:86
 msgid "Irish ga"
-msgstr ""
+msgstr "Irská ga"
 
 #: ../../../README.rst:87
 msgid "Italian       it"
-msgstr ""
+msgstr "Italština to"
 
 #: ../../../README.rst:88
 msgid "Japanese      ja"
-msgstr ""
+msgstr "Japonština ja"
 
 #: ../../../README.rst:89
 msgid "Javanese      jw"
-msgstr ""
+msgstr "Javanese jw"
 
 #: ../../../README.rst:90
 msgid "Kannada       kn"
-msgstr ""
+msgstr "Kannada kn"
 
 #: ../../../README.rst:91
 msgid "Kazakh        kk"
-msgstr ""
+msgstr "Kazakh kk"
 
 #: ../../../README.rst:92
 msgid "Khmer km"
-msgstr ""
+msgstr "Khmer km"
 
 #: ../../../README.rst:93
 msgid "Korean        ko"
-msgstr ""
+msgstr "Korejská ko"
 
 #: ../../../README.rst:94
 msgid "Kurdish       ku"
-msgstr ""
+msgstr "Kurdština ku"
 
 #: ../../../README.rst:95
 msgid "Kyrgyz        ky"
-msgstr ""
+msgstr "Kyrgyzské ky"
 
 #: ../../../README.rst:96
 msgid "Lao   lo"
-msgstr ""
+msgstr "Lao lo"
 
 #: ../../../README.rst:97
 msgid "Latin la"
-msgstr ""
+msgstr "Latin la"
 
 #: ../../../README.rst:98
 msgid "Latvian       lv"
-msgstr ""
+msgstr "Lotyština lv"
 
 #: ../../../README.rst:99
 msgid "Lithuanian    lt"
-msgstr ""
+msgstr "Lithuanian lt"
 
 #: ../../../README.rst:100
 msgid "Luxembourgish lb"
-msgstr ""
+msgstr "Lucemburský lb"
 
 #: ../../../README.rst:101
 msgid "Macedonian    mk"
-msgstr ""
+msgstr "Makedonská mk"
 
 #: ../../../README.rst:102
 msgid "Malagasy      mg"
-msgstr ""
+msgstr "Malagasy mg"
 
 #: ../../../README.rst:103
 msgid "Malay ms"
-msgstr ""
+msgstr "Malajština ms"
 
 #: ../../../README.rst:104
 msgid "Malayalam     ml"
-msgstr ""
+msgstr "Malayalam ml"
 
 #: ../../../README.rst:105
 msgid "Maltese       mt"
-msgstr ""
+msgstr "Maltština mt"
 
 #: ../../../README.rst:106
 msgid "Maori mi"
-msgstr ""
+msgstr "Maori mi"
 
 #: ../../../README.rst:107
 msgid "Marathi       mr"
-msgstr ""
+msgstr "Marathi paní"
 
 #: ../../../README.rst:108
 msgid "Mongolian     mn"
-msgstr ""
+msgstr "Mongolské mn"
 
 #: ../../../README.rst:109
 msgid "Myanmar (Burmese)     my"
-msgstr ""
+msgstr "Myanmar (barmský) můj"
 
 #: ../../../README.rst:110
 msgid "Nepali        ne"
-msgstr ""
+msgstr "Nepál ne"
 
 #: ../../../README.rst:111
 msgid "Norwegian     no"
-msgstr ""
+msgstr "Norský č"
 
 #: ../../../README.rst:112
 msgid "Nyanja (Chichewa)     ny"
-msgstr ""
+msgstr "Nyanja (Chichewa) ny"
 
 #: ../../../README.rst:113
 msgid "Pashto        ps"
-msgstr ""
+msgstr "Pashto ps"
 
 #: ../../../README.rst:114
 msgid "Persian       fa"
-msgstr ""
+msgstr "Perská fa"
 
 #: ../../../README.rst:115
 msgid "Polish        pl"
-msgstr ""
+msgstr "Polský pl"
 
 #: ../../../README.rst:116
 msgid "Portuguese (Portugal, Brazil) pt"
-msgstr ""
+msgstr "Portugalština (Portugalsko, Brazílie) pt"
 
 #: ../../../README.rst:117
 msgid "Punjabi       pa"
-msgstr ""
+msgstr "Punjabi pa"
 
 #: ../../../README.rst:118
 msgid "Romanian      ro"
-msgstr ""
+msgstr "Rumunský ro"
 
 #: ../../../README.rst:119
 msgid "Russian       ru"
-msgstr ""
+msgstr "Ruština ru"
 
 #: ../../../README.rst:120
 msgid "Samoan        sm"
-msgstr ""
+msgstr "Samoan sm"
 
 #: ../../../README.rst:121
 msgid "Scots Gaelic  gd"
-msgstr ""
+msgstr "Skotská gaelská gd"
 
 #: ../../../README.rst:122
 msgid "Serbian       sr"
-msgstr ""
+msgstr "Serbian sr"
 
 #: ../../../README.rst:123
 msgid "Sesotho       st"
-msgstr ""
+msgstr "Sesotho st"
 
 #: ../../../README.rst:124
 msgid "Shona sn"
-msgstr ""
+msgstr "Shona sn"
 
 #: ../../../README.rst:125
 msgid "Sindhi        sd"
-msgstr ""
+msgstr "Sindhi sd"
 
 #: ../../../README.rst:126
 msgid "Sinhala (Sinhalese)   si"
-msgstr ""
+msgstr "Sinhala (Sinhalese) si"
 
 #: ../../../README.rst:127
 msgid "Slovak        sk"
-msgstr ""
+msgstr "Slovenské sk"
 
 #: ../../../README.rst:128
 msgid "Slovenian     sl"
-msgstr ""
+msgstr "Slovinština sl"
 
 #: ../../../README.rst:129
 msgid "Somali        so"
-msgstr ""
+msgstr "Somálština tak"
 
 #: ../../../README.rst:130
 msgid "Spanish       es"
-msgstr ""
+msgstr "Španělština es"
 
 #: ../../../README.rst:131
 msgid "Sundanese     su"
-msgstr ""
+msgstr "Sundanese su"
 
 #: ../../../README.rst:132
 msgid "Swahili       sw"
-msgstr ""
+msgstr "Swahili sw"
 
 #: ../../../README.rst:133
 msgid "Swedish       sv"
-msgstr ""
+msgstr "Švédská sv"
 
 #: ../../../README.rst:134
 msgid "Tagalog (Filipino)    tl"
-msgstr ""
+msgstr "Tagalog (Filipínský) tl"
 
 #: ../../../README.rst:135
 msgid "Tajik tg"
-msgstr ""
+msgstr "Tádžik tg"
 
 #: ../../../README.rst:136
 msgid "Tamil ta"
-msgstr ""
+msgstr "Tamil ta"
 
 #: ../../../README.rst:137
 msgid "Telugu        te"
-msgstr ""
+msgstr "Telugu te"
 
 #: ../../../README.rst:138
 msgid "Thai  th"
-msgstr ""
+msgstr "Thajský th"
 
 #: ../../../README.rst:139
 msgid "Turkish       tr"
-msgstr ""
+msgstr "Turečtina tr"
 
 #: ../../../README.rst:140
 msgid "Ukrainian     uk"
-msgstr ""
+msgstr "Ukrajinský uk"
 
 #: ../../../README.rst:141
 msgid "Urdu  ur"
-msgstr ""
+msgstr "Urdu ur"
 
 #: ../../../README.rst:142
 msgid "Uzbek uz"
-msgstr ""
+msgstr "Uzbek uz"
 
 #: ../../../README.rst:143
 msgid "Vietnamese    vi"
-msgstr ""
+msgstr "Vietnamština vi"
 
 #: ../../../README.rst:144
 msgid "Welsh cy"
-msgstr ""
+msgstr "Welsh cy"
 
 #: ../../../README.rst:145
 msgid "Xhosa xh"
-msgstr ""
+msgstr "Xhosa xh"
 
 #: ../../../README.rst:146
 msgid "Yiddish       yi"
-msgstr ""
+msgstr "Jidiš yi"
 
 #: ../../../README.rst:147
 msgid "Yoruba        yo"
-msgstr ""
+msgstr "Yoruba yo"
 
 #: ../../../README.rst:148
 msgid "Zulu  zu"
-msgstr ""
+msgstr "Zulu zu"
 
 #: ../../../README.rst:156
 msgid "QuickStart for auto-translation with potranslator"
-msgstr ""
+msgstr "Rychlé spuštění pro automatický překlad s překladačem"
 
 #: ../../../README.rst:158
 msgid ""
 "This section describes how to translate documents generated with Sphinx_ "
 "with the `potranslator` command."
 msgstr ""
+"Tato část popisuje, jak přeložit dokumenty generované pomocí Sphinx_ "
+"příkazem `potranslator`."
 
 #: ../../../README.rst:160
 msgid "Create your document(s) by using Sphinx::"
-msgstr ""
+msgstr "Vytvoření dokumentů pomocí nástroje Sphinx ::"
 
 #: ../../../README.rst:164
 msgid "Optionally add the settings to your `conf.py` if you have one::"
-msgstr ""
+msgstr "Volitelně přidejte nastavení do vašeho \"conf.py\", pokud máte jednu:"
 
 #: ../../../README.rst:169
 msgid "`locale_dirs` is required and `gettext_compact` is optional."
-msgstr ""
+msgstr "'locale_dirs` je vyžadováno a `gettext_compact` je nepovinné."
 
 #: ../../../README.rst:171
 msgid ""
@@ -483,141 +494,153 @@ msgid ""
 "are in the folder containing `make.bat` and `Makefile` if you are on "
 "windows)::"
 msgstr ""
+"Extrahujte přeložené zprávy dokumentu do souborů pot (ujistěte se, že jste "
+"ve složce obsahující `make.bat` a` Makefile`, pokud jste na okně) ::"
 
 #: ../../../README.rst:175
 msgid "Translate/Update your documents in German and Japanese::"
-msgstr ""
+msgstr "Přeložte / aktualizujte své dokumenty v němčině a japonštině ::"
 
 #: ../../../README.rst:179
 msgid ""
 "Done. You got these directories that contain po files with auto-translated "
 "entries:"
 msgstr ""
+"Hotovo. Máte tyto adresáře, které obsahují po soubory s automaticky "
+"přeloženými záznamy:"
 
 #: ../../../README.rst:181
 msgid "`./locale/de/LC_MESSAGES/`"
-msgstr ""
+msgstr "`. / locale / de / LC_MESSAGES /`"
 
 #: ../../../README.rst:182
 msgid "`./locale/ja/LC_MESSAGES/`"
-msgstr ""
+msgstr "`. / locale / ja / LC_MESSAGES /`"
 
 #: ../../../README.rst:184
 msgid ""
 "Translate/Update your documents in Japanese and Build the compiled mo "
 "files::"
 msgstr ""
+"Přeložte / aktualizujte své dokumenty v japonštině a sestavte kompilované mo"
+" soubory ::"
 
 #: ../../../README.rst:189
 msgid "That's all!"
-msgstr ""
+msgstr "To je vše!"
 
 #: ../../../README.rst:193
 msgid "Basic Features"
-msgstr ""
+msgstr "Základní funkce"
 
 #: ../../../README.rst:195
 msgid "Translate or update po files from pot files."
-msgstr ""
+msgstr "Přeložte nebo aktualizujte po soubory ze souborů pot."
 
 #: ../../../README.rst:196
 msgid "Build mo files from po or pot files."
-msgstr ""
+msgstr "Vytvořte mo soubory z po nebo pot souborů."
 
 #: ../../../README.rst:199
 msgid "Requirements for the basic features"
-msgstr ""
+msgstr "Požadavky na základní funkce"
 
 #: ../../../README.rst:201
 msgid "Python 3.6, 3.5, 3.4, 2.7, pypy."
-msgstr ""
+msgstr "Python 3.6, 3.5, 3.4, 2.7, pypy."
 
 #: ../../../README.rst:202
 msgid ""
 "external library: setuptools_, six_, babel_, click_, googletrans_, polib_"
 msgstr ""
+"externí knihovna: setuptools, six, babel_, click_id, googletrans_, polib_"
 
 #: ../../../README.rst:206
 msgid "Optional features"
-msgstr ""
+msgstr "Volitelné funkce"
 
 #: ../../../README.rst:207
 msgid "These features need the `transifex-client`_ library."
-msgstr ""
+msgstr "Tyto funkce vyžadují knihovnu `transifex-client`."
 
 #: ../../../README.rst:209
 msgid ""
 "create .transifexrc file from environment variable, without interactive "
 "input."
 msgstr ""
+"vytvořit soubor .transifexrc z proměnné prostředí bez interaktivního vstupu."
 
 #: ../../../README.rst:211
 msgid "create .tx/config file without interactive input."
-msgstr ""
+msgstr "vytvořit soubor .tx / config bez interaktivního vstupu."
 
 #: ../../../README.rst:212
 msgid "update .tx/config file from locale/pot files automatically."
-msgstr ""
+msgstr "aktualizovat soubor .tx / config z souborů locale / pot."
 
 #: ../../../README.rst:213
 msgid "build mo files from po files in the locale directory."
-msgstr ""
+msgstr "stahovat mo soubory z po souborů v adresáři locale."
 
 #: ../../../README.rst:215
 msgid "You need to use the `tx` command for below features:"
-msgstr ""
+msgstr "Pro níže uvedené funkce musíte použít příkaz `tx`:"
 
 #: ../../../README.rst:217
 msgid "`tx push -s` : push pot (translation catalogs) to transifex."
-msgstr ""
+msgstr "`tx push -s`: push pot (překladové katalogy) na transifex."
 
 #: ../../../README.rst:218
 msgid "`tx pull -l ja` : pull po (translated catalogs) from transifex."
-msgstr ""
+msgstr "`tx pull -l ja`: pull po (přeložené katalogy) z transifexu."
 
 #: ../../../README.rst:221
 msgid "Requirements for the optional features"
-msgstr ""
+msgstr "Požadavky na volitelné funkce"
 
 #: ../../../README.rst:223
 msgid ""
 "Your transifex_ account if you want to upload/download po files from "
 "transifex."
 msgstr ""
+"Váš transifex_ účet, pokud chcete nahrát / stáhnout po soubory z transifex."
 
 #: ../../../README.rst:225
 msgid "external library: `transifex-client`_"
-msgstr ""
+msgstr "externí knihovna: `transifex-client`"
 
 #: ../../../README.rst:229
 msgid "Installation"
-msgstr ""
+msgstr "Instalace"
 
 #: ../../../README.rst:231
 msgid "Recommended strongly: use virtualenv for this procedure::"
-msgstr ""
+msgstr "Silně doporučeno: použijte virtualenv pro tento postup ::"
 
 #: ../../../README.rst:235
 msgid ""
 "If you want to use the `Optional Features`_, you need install this "
 "additional library::"
 msgstr ""
+"Chcete-li použít `Volitelné funkce ', musíte nainstalovat tuto další "
+"knihovnu ::"
 
 #: ../../../README.rst:241
 msgid "Commands, options, environment variables"
-msgstr ""
+msgstr "Příkazy, volby, proměnné prostředí"
 
 #: ../../../README.rst:244
 msgid "Commands"
-msgstr ""
+msgstr "Příkazy"
 
 #: ../../../README.rst:246
 msgid "Type `potranslator` without arguments to show the help instructions."
 msgstr ""
+"Zadejte příkaz `prekladatel` bez argumentů pro zobrazení pokynů nápovědy."
 
 #: ../../../README.rst:250
 msgid "Setup environment variables"
-msgstr ""
+msgstr "Nastavení proměnných prostředí"
 
 #: ../../../README.rst:252
 msgid ""
@@ -625,27 +648,32 @@ msgid ""
 "format POTRANSLATOR_<UPPER_LONG_NAME> . Dashes (-) have to replaced with "
 "underscores (_)."
 msgstr ""
+"Všechny možnosti příkazového řádku lze nastavit pomocí proměnných prostředí "
+"pomocí formátu POTRANSLATOR_ <UPPER_LONG_NAME>. Pomlčky (-) musí být "
+"nahrazeny podtržítky (_)."
 
 #: ../../../README.rst:256
 msgid "For example, to set the languages::"
-msgstr ""
+msgstr "Chcete-li například nastavit jazyky:"
 
 #: ../../../README.rst:260
 msgid "This is the same as passing the option to potranslator directly::"
-msgstr ""
+msgstr "To je stejné jako předání možnosti přímo do překladače ::"
 
 #: ../../../README.rst:266
 msgid "Setup sphinx conf.py"
-msgstr ""
+msgstr "Nastavení sphinx conf.py"
 
 #: ../../../README.rst:268
 msgid ""
 "Add the following settings to your sphinx document's conf.py if it exists::"
 msgstr ""
+"Přidejte následující nastavení do vašeho souboru conf.py dokumentu sphinx, "
+"pokud existuje:"
 
 #: ../../../README.rst:275
 msgid "Setup Makefile / make.bat"
-msgstr ""
+msgstr "Nastavení Makefile / make.bat"
 
 #: ../../../README.rst:277
 msgid ""
@@ -654,33 +682,41 @@ msgid ""
 "can do that by replacing `_build/gettext` with `locale/pot` in your "
 "`Makefile` and/or `make.bat` that was generated by sphinx-quickstart."
 msgstr ""
+"`make gettext` bude generovat soubory pot do adresáře` _build / gettext`, "
+"nicméně pot soubory mohou být generovány v `locale / pot`, pokud je to "
+"vhodné. Můžete to udělat tak, že nahradíte `_build / gettext` za` locale / "
+"pot` v `makefile` a / nebo` make.bat`, který byl generován sphinx-"
+"quickstart."
 
 #: ../../../README.rst:284
 msgid "License"
-msgstr ""
+msgstr "Licence"
 
 #: ../../../README.rst:285
 msgid ""
 "Licensed under the BSD license. See the LICENSE file for specific terms."
 msgstr ""
+"Licence pod licencí BSD. Seznam konkrétních výrazů naleznete v souboru "
+"LICENSE."
 
 #: ../../../README.rst:290
 msgid "Original"
-msgstr ""
+msgstr "Originál"
 
 #: ../../../README.rst:292
 msgid "This utilty is derived from this project."
-msgstr ""
+msgstr "Tento nástroj je odvozen z tohoto projektu."
 
 #: ../../../README.rst:294
 msgid "https://pypi.org/project/sphinx-intl"
-msgstr ""
+msgstr "https://pypi.org/project/sphinx-intl"
 
 #: ../../../README.rst:298
 msgid "CHANGES"
-msgstr ""
+msgstr "ZMĚNY"
 
 #: ../../../README.rst:300
 msgid ""
 "See: https://github.com/sphinx-doc/potranslator/blob/master/HISTORY.rst"
 msgstr ""
+"Viz: https://github.com/sphinx-doc/potranslator/blob/master/HISTORY.rst"
