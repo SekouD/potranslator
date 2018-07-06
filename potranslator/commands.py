@@ -30,31 +30,48 @@ ENVVAR_PREFIX = 'POTRANSLATOR'
 # utility functions
 
 class Tags(object):
+    """
+
+    :param tags:
+    """
     def __init__(self, tags=None):
-        # type: (List[unicode]) -> None
         self.tags = dict.fromkeys(tags or [], True)
 
     def has(self, tag):
-        # type: (unicode) -> bool
+        """
+
+        :param tag:
+        :return:
+        """
         return tag in self.tags
 
     __contains__ = has
 
     def __iter__(self):
-        # type: () -> Iterator[unicode]
         return iter(self.tags)
 
     def add(self, tag):
-        # type: (unicode) -> None
+        """
+
+        :param tag:
+        """
         self.tags[tag] = True
 
     def remove(self, tag):
-        # type: (unicode) -> None
+        """
+
+        :param tag:
+        """
         self.tags.pop(tag, None)
 
 
 def read_config(path, passed_tags):
+    """
 
+    :param path:
+    :param passed_tags:
+    :return:
+    """
     tags = Tags()
     passed_tags = sum(passed_tags, ())
     for tag in passed_tags:
@@ -79,6 +96,11 @@ def read_config(path, passed_tags):
 
 
 def get_lang_dirs(path):
+    """
+
+    :param path:
+    :return:
+    """
     dirs = [relpath(d, path)
             for d in glob(path+'/[a-z]*')
             if os.path.isdir(d) and not d.endswith('pot')]
