@@ -25,6 +25,11 @@ from . import polib
 # utility functions
 
 def get_lang_dirs(path):
+    """
+
+    :param path: unicode.
+    :return: tuple.
+    """
     dirs = [relpath(d, path)
             for d in glob(path + '/[a-z]*')
             if os.path.isdir(d) and not d.endswith('pot')]
