@@ -320,7 +320,7 @@ Setup sphinx conf.py
 
 Add the following settings to your sphinx document's conf.py if it exists:
 
-.. code-block:: console
+.. code-block:: python
 
    locale_dirs = ['locale/']   #for example
    gettext_compact = False     #optional
