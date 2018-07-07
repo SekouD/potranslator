@@ -34,6 +34,7 @@ test_requirements = ['pip==10.0.1',
                      'twine==1.11.0',
                      'googletrans==2.3.0',
                      'polib==1.1.0',
+                     'importlib_resources==1.0.1',
                      ]
 
 extras_require = {
