@@ -14,7 +14,8 @@ __status__ = "Production"
 import json
 import polib
 from googletrans import Translator
-import importlib_resources
+# import importlib_resources
+import pkg_resources
 import platform
 from locale import windows_locale, getdefaultlocale
 import gettext
@@ -23,11 +24,17 @@ from codecs import open
 
 # Sets up the automatic translation of annotated strings displayed to the user.
 _RESOURCE_PACKAGE = __name__
-with importlib_resources.path(_RESOURCE_PACKAGE, 'locale') as path:
-    _TRANSLATIONS_PATH = path
 
-with importlib_resources.path(_RESOURCE_PACKAGE, 'supported_languages.json') as path:
-    json_file = path
+# Reverted to pkg_resources for readthedocs compatibility
+# with importlib_resources.path(_RESOURCE_PACKAGE, 'locale') as path:
+#     _TRANSLATIONS_PATH = path
+#
+# with importlib_resources.path(_RESOURCE_PACKAGE, 'supported_languages.json') as path:
+#     json_file = path
+
+_TRANSLATIONS_PATH = pkg_resources.resource_filename(_RESOURCE_PACKAGE, 'locale')
+
+json_file = pkg_resources.resource_filename(_RESOURCE_PACKAGE, 'supported_languages.json')
 
 with open(json_file.as_posix(), 'r', encoding='utf-8') as file:
     SUPPORTED_LANGUAGES = json.load(file)
