@@ -2,4 +2,4 @@ googletrans==2.3.0
 polib==1.1.0
 Click>=6.0
 path.py==11.0.1
-importlib-resources==1.0.1
+importlib_resources==1.0.1
