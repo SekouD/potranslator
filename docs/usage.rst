@@ -7,7 +7,7 @@ From a Python program
 
 To use potranslator in a python project:
 
-.. code-block:: console
+.. code-block:: python
 
     from potranslator import PoTranslator
 
