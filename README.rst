@@ -23,6 +23,11 @@ potranslator
         :target: https://pyup.io/repos/github/SekouD/potranslator/
         :alt: Depedencies Update Status
 
+.. image:: https://pyup.io/repos/github/SekouD/potranslator/python-3-shield.svg
+     :target: https://pyup.io/repos/github/SekouD/potranslator/
+     :alt: Python 3 Readiness
+
+
 .. image:: https://codecov.io/gh/SekouD/potranslator/branch/master/graph/badge.svg
         :target: https://codecov.io/gh/SekouD/potranslator.
         :alt: Code Coverage Status
