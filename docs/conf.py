@@ -20,9 +20,7 @@
 #
 import os
 import sys
-
-APP_DIR = os.path.normpath(os.path.join(os.getcwd(), '../..'))
-sys.path.insert(0, APP_DIR)
+sys.path.insert(0, os.path.abspath('..'))
 
 import potranslator
 
