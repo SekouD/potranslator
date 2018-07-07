@@ -277,6 +277,13 @@ For example, to set the target languages:
 
    $ export POTRANSLATOR_LANGUAGE=de,ja
 
+On the Windows command line:
+
+   .. code-block:: console
+
+      > set POTRANSLATOR_LANGUAGE=de,ja
+
+
 This is the same as passing the option to potranslator directly:
 
 .. code-block:: console
