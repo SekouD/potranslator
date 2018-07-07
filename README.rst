@@ -279,9 +279,9 @@ For example, to set the target languages:
 
 On the Windows command line:
 
-   .. code-block:: console
+.. code-block:: console
 
-      > set POTRANSLATOR_LANGUAGE=de,ja
+    > set POTRANSLATOR_LANGUAGE=de,ja
 
 
 This is the same as passing the option to potranslator directly:
