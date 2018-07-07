@@ -18,10 +18,10 @@ __maintainer__: Text
 __status__: Text
 _RESOURCE_PACKAGE: Text = __name__
 # Reverted to pkg_resources for readthedocs compatibility
-# _TRANSLATIONS_PATH: Path
-# json_file: Path
-_TRANSLATIONS_PATH: Text
-json_file: Text
+_TRANSLATIONS_PATH: Path
+json_file: Path
+# _TRANSLATIONS_PATH: Text
+# json_file: Text
 SUPPORTED_LANGUAGES: Tuple[Text]
 _TRANSLATED_LANGUAGES: Tuple[Text]
 _user_locale: Text
