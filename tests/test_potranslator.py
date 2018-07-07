@@ -30,6 +30,22 @@ __dir__ = path(os.path.dirname('./tests/'))
 
 
 @pytest.fixture(scope="function")
+def temp_test_data(request, tmpdir):
+    template_dir = 'test_data'
+
+    tmpdir = path(tmpdir)
+    (__dir__ / template_dir).copytree(tmpdir / template_dir)
+    cwd = os.getcwd()
+    temp = tmpdir / template_dir
+    os.chdir(temp)
+
+    def fin():
+        os.chdir(cwd)
+    request.addfinalizer(fin)
+    return temp
+
+
+@pytest.fixture(scope="function")
 def temp(request, tmpdir):
     template_dir = 'root'
 
@@ -63,35 +79,38 @@ def home_in_temp(request, tmpdir):
 
 
 class TestPoTranslator:
-    translator = PoTranslator(pot_dir='./tests/test_data/test_pot_files', locale_dir='./tests/test_data/locale')
-    test_po_file = './tests/test_data/empty_test.po'
-    test_pot_file = './tests/test_data/test_pot_files/test-usage.pot'
     test_languages = ('es', 'fr', 'it', 'pt', 'ro')
 
-    def test_failed_translate_unsupported_language(self):
+    def test_failed_translate_unsupported_language(self, temp_test_data):
         """
 
         :return:
         """
+        translator = PoTranslator(pot_dir='./test_pot_files', locale_dir='./locale')
+        test_po_file = './empty_test.po'
         with pytest.raises(ValueError):
-            failed_translation = self.translator.translate(self.test_po_file, 'sp')
+            failed_translation = translator.translate(test_po_file, 'sp')
         return
 
-    def test_failed_translate_auto_detect(self):
+    def test_failed_translate_auto_detect(self, temp_test_data):
         """
 
         :return:
         """
+        translator = PoTranslator(pot_dir='./test_pot_files', locale_dir='./locale')
+        test_po_file = './empty_test.po'
         with pytest.raises(ValueError):
-            failed_translation = self.translator.translate(self.test_po_file)
+            failed_translation = translator.translate(test_po_file)
         return
 
-    def test_translate(self):
+    def test_translate(self, temp_test_data):
         """
 
         :return:
         """
-        translation, updated = self.translator.translate(self.test_po_file, 'es')
+        translator = PoTranslator(pot_dir='./test_pot_files', locale_dir='./locale')
+        test_po_file = './empty_test.po'
+        translation, updated = translator.translate(test_po_file, 'es')
         assert all([entry.msgstr != '' for entry in translation])
         if not is_python2:
             assert translation[0].msgstr == 'Créditos'
@@ -99,23 +118,26 @@ class TestPoTranslator:
             assert translation[0].msgstr.encode('utf-8') == 'Créditos'
         return
 
-    def test_translate_auto_save(self):
+    def test_translate_auto_save(self, temp_test_data):
         """
 
         :return:
         """
-        modif_time = getmtime(self.test_po_file)
-        translation, updated = self.translator.translate(self.test_po_file, 'es', auto_save=True)
-        last_modif_time = getmtime(self.test_po_file)
+        translator = PoTranslator(pot_dir='./test_pot_files', locale_dir='./locale')
+        test_po_file = './empty_test.po'
+        modif_time = getmtime(test_po_file)
+        translation, updated = translator.translate(test_po_file, 'es', auto_save=True)
+        last_modif_time = getmtime(test_po_file)
         assert modif_time < last_modif_time
         return
 
-    def test_translate_all_locale(self):
+    def test_translate_all_locale(self, temp_test_data):
         """
 
         :return:
         """
-        translations = self.translator.translate_all_locale()
+        translator = PoTranslator(pot_dir='./test_pot_files', locale_dir='./locale')
+        translations = translator.translate_all_locale()
         assert not 'sp' in translations
         assert all(k in translations for k in self.test_languages)
         assert all('authors.po' in k for k in list(translations.values()))
@@ -125,7 +147,7 @@ class TestPoTranslator:
             assert translations['es']['authors.po'][0].msgstr.encode('utf-8') == 'Créditos'
         return
 
-    def test_translate_from_pot(self):
+    def test_translate_from_pot(self, temp_test_data):
         """
 
         :return:
@@ -135,23 +157,24 @@ class TestPoTranslator:
             'updated': 0,
             'not_changed': 0,
         }
-        translations = self.translator.translate_from_pot(self.test_pot_file, status, target_langs=self.test_languages)
+        translator = PoTranslator(pot_dir='./test_pot_files', locale_dir='./locale')
+        test_pot_file = './test_pot_files/test-usage.pot'
+        translations = translator.translate_from_pot(test_pot_file, status, target_langs=self.test_languages)
         assert all(k in translations for k in self.test_languages)
         if not is_python2:
             assert translations['es'][0].msgstr == 'Uso'
         else:
             assert translations['es'][0].msgstr.encode('utf-8') == 'Uso'
-        assert isfile(join(self.translator.locale_dir, '/'.join(('es', 'LC_MESSAGES', 'test-usage.po'))))
-        for locale in self.test_languages:
-            remove(join(self.translator.locale_dir, '/'.join((locale, 'LC_MESSAGES', 'test-usage.po'))))
+        assert isfile(join(translator.locale_dir, '/'.join(('es', 'LC_MESSAGES', 'test-usage.po'))))
         return
 
-    def test_translate_all_pot(self):
+    def test_translate_all_pot(self, temp_test_data):
         """
 
         :return:
         """
-        translations = self.translator.translate_all_pot(target_langs=self.test_languages)
+        translator = PoTranslator(pot_dir='./test_pot_files', locale_dir='./locale')
+        translations = translator.translate_all_pot(target_langs=self.test_languages)
         assert all(k in translations['test-authors.pot'] for k in self.test_languages)
         assert all(k in translations['test-usage.pot'] for k in self.test_languages)
 
@@ -159,9 +182,6 @@ class TestPoTranslator:
             assert translations['test-authors.pot']['es'][0].msgstr == 'Créditos'
         else:
             assert translations['test-authors.pot']['es'][0].msgstr.encode('utf-8') == 'Créditos'
-        for locale in self.test_languages:
-            for file in ('test-authors.po', 'test-usage.po'):
-                remove(join(self.translator.locale_dir, '/'.join((locale, 'LC_MESSAGES', file))))
         return
 
 
