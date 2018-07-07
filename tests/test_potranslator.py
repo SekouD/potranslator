@@ -194,20 +194,24 @@ class TestCommandLine:
         help_result = runner.invoke(commands.main, ['--help'])
         assert help_result.exit_code == 0
         assert 'All command-line options can be set' in help_result.output
+        return
 
     def test_update_pot_notfound(self, temp):
         r1 = runner.invoke(commands.update, ['-d', 'locale'])
         assert r1.exit_code != 0
         assert 'Please specify a pot directory with -p option,' in r1.output
+        return
 
     def test_update_no_language(self, temp):
         r1 = runner.invoke(commands.update, ['-d', 'locale', '-p', '_build/locale'])
         assert r1.exit_code != 0
         assert 'No languages were found. Please specify a language with -l' in r1.output
+        return
 
     def test_update_simple(self, temp):
         r1 = runner.invoke(commands.update, ['-d', 'locale', '-p', '_build/locale', '-l', 'ja'])
         assert r1.exit_code == 0
+        return
 
     def test_update_difference_detect(self, temp):
         r1 = runner.invoke(commands.update, ['-d', 'locale', '-p', '_build/locale', '-l', 'ja'])
@@ -242,10 +246,16 @@ class TestCommandLine:
         assert r4.output.count('Create:') == 0
         assert r4.output.count('Update:') == 0
         assert r4.output.count('Not Changed:') == 1
+        return
 
-    # def test_update_with_conf_file(self, temp):
-    #     r1 = runner.invoke(commands.update, ['-d', 'locale', '-p', '_build/locale', '-l', 'ja'])
-    #     assert r1.exit_code == 0
+    def test_update_with_conf_file(self, temp):
+        r1 = runner.invoke(commands.main, ['-c', './conf.py', 'update', '-d', 'locale', '-p', '_build/locale', '-l', 'ja'])
+        assert r1.exit_code == 0
+        assert 'Created: README.po' in r1.output
+        assert 'Updated: README.po' in r1.output
+        assert 'ja/LC_MESSAGES/README.po' in r1.output
+        return
+
 
     def test_stat(self, temp):
         r1 = runner.invoke(commands.update, ['-d', 'locale', '-p', '_build/locale', '-l', 'ja'])
@@ -254,6 +264,7 @@ class TestCommandLine:
         r2 = runner.invoke(commands.stat, ['-d', 'locale'])
         assert r2.exit_code == 0
         assert 'README.po: 1 translated, 0 fuzzy, 0 untranslated.' in r2.output
+        return
 
     def test_stat_with_multiple_languages(self, temp):
         r1 = runner.invoke(commands.update, ['-d', 'locale', '-p', '_build/locale', '-l', 'ja,de,it'])
@@ -263,10 +274,12 @@ class TestCommandLine:
         r2 = runner.invoke(commands.stat, ['-d', 'locale', '-l', 'ja'])
         assert r2.exit_code == 0
         assert 'README.po: 1 translated, 0 fuzzy, 0 untranslated.' in r2.output
+        return
 
     def test_build(self, temp):
         result = runner.invoke(commands.build, ['--locale-dir', 'locale'])
         assert result.exit_code == 0
+        return
 
 
 class TestTransifexCMD:
@@ -278,10 +291,12 @@ class TestTransifexCMD:
                                '--transifex-password', 'egg-pw',
                            ])
         assert r1.exit_code == 0
+        return
 
     def test_create_txconfig(self, home_in_temp, temp):
         r1 = runner.invoke(commands.main, ['create-txconfig'])
         assert r1.exit_code == 0
+        return
 
     @pytest.mark.skipif(is_CI, reason="Temp folder shenanigans.")
     def test_update_txconfig_resources(self, home_in_temp, temp):
@@ -293,6 +308,7 @@ class TestTransifexCMD:
                                '-d', 'locale',
                            ])
         assert r2.exit_code == 0
+        return
 
     @pytest.mark.skipif(is_CI, reason="Temp folder shenanigans.")
     def test_update_txconfig_resources_with_config(self, home_in_temp, temp):
@@ -312,6 +328,7 @@ class TestTransifexCMD:
 
         data = (tx_dir / 'config').text()
         assert re.search(r'\[ham-project\.README\]', data)
+        return
 
     @pytest.mark.skipif(is_CI, reason="Temp folder shenanigans.")
     def test_update_txconfig_resources_with_pot_dir_argument(self, home_in_temp, temp):
@@ -334,6 +351,7 @@ class TestTransifexCMD:
         data = (tx_dir / 'config').text().replace('\\', '/')
         assert re.search(r'\[ham-project\.README\]', data)
         assert re.search(r'source_file = _build/locale/README.pot', data)
+        return
 
     @pytest.mark.skipif(is_CI, reason="Temp folder shenanigans.")
     def test_update_txconfig_resources_with_project_name_including_dots(self, home_in_temp, temp):
@@ -355,6 +373,7 @@ class TestTransifexCMD:
 
         data = (tx_dir / 'config').text()
         assert re.search(r'\[ham-projectcom\.README\]', data)
+        return
 
     @pytest.mark.skipif(is_CI, reason="Temp folder shenanigans.")
     def test_update_txconfig_resources_with_project_name_including_spaces(self, home_in_temp, temp):
@@ -376,6 +395,7 @@ class TestTransifexCMD:
 
         data = (tx_dir / 'config').text()
         assert re.search(r'\[ham-project-com\.README\]', data)
+        return
 
     @pytest.mark.skipif(is_CI, reason="Temp folder shenanigans.")
     def test_update_txconfig_resources_with_potfile_including_symbols(self, home_in_temp, temp):
@@ -405,3 +425,4 @@ class TestTransifexCMD:
         data = (tx_dir / 'config').text()
         assert re.search(r'\[ham-project-com\.example_document\]', data)
         assert re.search(r'\[ham-project-com\.test_document\]', data)
+        return
