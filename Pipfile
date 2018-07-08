@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+googletrans = "==2.3.0"
+polib = "==1.1.0"
+click = ">=6.0"
+"path.py" = "==11.0.1"
+importlib_resources = "==1.0.1"
+
+
+[dev-packages]
+"bump2version" = "==0.5.8"
+watchdog = "==0.8.3"
+"flake8" = "==3.5.0"
+tox = "==3.0.0"
+coverage = "==4.5.1"
+twine = "==1.11.0"
+pytest = "==3.6.3"
+pytest-runner = "==4.2"
+Sphinx = "==1.7.5"
+
+# Commented out to support multiple python versions.
+# [requires]
+# python_version = "3.6"
