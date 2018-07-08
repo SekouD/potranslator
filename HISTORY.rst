@@ -2,6 +2,15 @@ History
 =======
 
 
+1.1.0 (2018-07-08)
+------------------
+
+* Now uses importlib_ressources for faster startup from CLI.
+* Updated the command line usability.
+* Added Type Annotation compliant with PEP 561.
+* Updated Documentation.
+
+
 1.0.5 (2018-07-06)
 ------------------
 
