@@ -5,7 +5,7 @@
 from .potranslator import PoTranslator
 from .polib import POFile
 from pathlib import Path
-from typing import Text, Tuple, Any
+from typing import Text, Tuple, Any, Mapping
 import gettext
 
 __author__: Text
@@ -22,7 +22,7 @@ _TRANSLATIONS_PATH: Path
 json_file: Path
 # _TRANSLATIONS_PATH: Text
 # json_file: Text
-SUPPORTED_LANGUAGES: Tuple[Text]
+SUPPORTED_LANGUAGES: Mapping[Text, Text]
 _TRANSLATED_LANGUAGES: Tuple[Text]
 _user_locale: Text
 _POTRANSLATOR_TRANSLATIONS: gettext.GNUTranslations
