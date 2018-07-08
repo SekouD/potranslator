@@ -91,3 +91,4 @@ def execfile_(filepath, _globals):  # pragma: no cover
             raise
 
     exec_(code, _globals)
+    return
