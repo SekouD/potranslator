@@ -93,6 +93,7 @@ def create_transifexrc(transifex_username, transifex_password):
     with open(target, 'wt') as rc:
         rc.write(TRANSIFEXRC_TEMPLATE % locals())
     click.echo('Create: {0}'.format(target))
+    return
 
 
 def create_txconfig():  # pragma: no cover
@@ -111,6 +112,7 @@ def create_txconfig():  # pragma: no cover
         f.write(TXCONFIG_TEMPLATE)
 
     click.echo('Create: {0}'.format(target))
+    return
 
 
 def update_txconfig_resources(transifex_project_name, locale_dir, pot_dir):  # pragma: no cover
@@ -172,3 +174,4 @@ def update_txconfig_resources(transifex_project_name, locale_dir, pot_dir):  # p
                 txclib.utils.exec_command('set', args, tx_root)
             else:
                 click.echo('{0} is empty, skipped'.format(pot_file))
+                return
