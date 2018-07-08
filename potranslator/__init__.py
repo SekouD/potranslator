@@ -26,13 +26,13 @@ from codecs import open
 _RESOURCE_PACKAGE = __name__
 
 # Reverted to pkg_resources for readthedocs compatibility
-with importlib_resources.path(_RESOURCE_PACKAGE, 'locale') as path:
+with importlib_resources.path(_RESOURCE_PACKAGE, 'locale_dir') as path:
     _TRANSLATIONS_PATH = path
 
 with importlib_resources.path(_RESOURCE_PACKAGE, 'supported_languages.json') as path:
     json_file = path
 
-# _TRANSLATIONS_PATH = pkg_resources.resource_filename(_RESOURCE_PACKAGE, 'locale')
+# _TRANSLATIONS_PATH = pkg_resources.resource_filename(_RESOURCE_PACKAGE, 'locale_dir')
 #
 # json_file = pkg_resources.resource_filename(_RESOURCE_PACKAGE, 'supported_languages.json')
 

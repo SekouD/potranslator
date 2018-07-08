@@ -83,7 +83,7 @@ setup(
     license="BSD license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
-    package_data={'translations': ['potranslator/locale/*'],
+    package_data={'translations': ['potranslator/locale_dir/*'],
                   'tests': ['tests/*'],
                   'type_stubs': ['potranslator/py.typed', 'potranslator/*']},
     keywords='potranslator sphinx sphinx-intl gettext localization translation translate po pot mo internationalization python google',
