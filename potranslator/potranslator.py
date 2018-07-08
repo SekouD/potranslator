@@ -59,7 +59,7 @@ class PoTranslator:
         :return: tuple.
             A tuple containing the translated version of the original catalog and the status of the POFile.
         """
-        po = polib.pofile(file_name, encoding=encoding)
+        po = polib.pofile(file_name, **{'encoding': encoding})
         if target_lang == 'auto':
             try:
                 target_lang = po.metadata['Language']
@@ -140,7 +140,7 @@ class PoTranslator:
         :return: Dictionary.
             A dictionary of po files.
         """
-        pot = polib.pofile(filename, encoding=encoding)
+        pot = polib.pofile(filename, **{'encoding': encoding})
         results = {}
 
         for target_lang in target_langs:
