@@ -271,6 +271,7 @@ def main(ctx, config, tag):
             'transifex_project_name': ctx.transifex_project_name,
         },
     }
+    return
 
 
 @main.command(context_settings=CONTEXT_SETTINGS)
@@ -304,6 +305,7 @@ def update(locale_dir, pot_dir, language):
         raise click.BadParameter(msg, param_hint='language')
 
     basic.update(locale_dir, pot_dir, languages)
+    return
 
 
 @main.command(context_settings=CONTEXT_SETTINGS)
@@ -337,6 +339,7 @@ def stat(locale_dir, language):
         language = get_lang_dirs(locale_dir)
     languages = sum(language, ())  # flatten
     basic.stat(locale_dir, languages)
+    return
 
 
 @main.command('create-transifexrc')
@@ -347,6 +350,7 @@ def create_transifexrc(transifex_username, transifex_password):
     Create `$HOME/.transifexrc`
     """
     transifex.create_transifexrc(transifex_username, transifex_password)
+    return
 
 
 @main.command('create-txconfig')
@@ -355,6 +359,7 @@ def create_txconfig():
     Create `./.tx/config`
     """
     transifex.create_txconfig()
+    return
 
 
 @main.command('update-txconfig-resources')
@@ -369,6 +374,7 @@ def update_txconfig_resources(transifex_project_name, locale_dir, pot_dir):
         pot_dir = os.path.join(locale_dir, 'pot')
 
     transifex.update_txconfig_resources(transifex_project_name, locale_dir, pot_dir)
+    return
 
 
 if __name__ == '__main__':
