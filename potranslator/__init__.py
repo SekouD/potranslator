@@ -4,7 +4,7 @@
 
 __author__ = """SekouD"""
 __email__ = 'sekoud.python@gmail.com'
-__version__ = '1.1.0'
+__version__ = '1.1.1'
 __copyright__ = "Copyright (c) 2017, SekouD"
 __credits__ = ("SekouD",)
 __license__ = "BSD"
