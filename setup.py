@@ -44,7 +44,7 @@ extras_require = {
 }
 
 setup(
-    version='1.1.3',
+    version='1.1.5',
     author="SekouD",
     author_email='sekoud.python@gmail.com',
     classifiers=[

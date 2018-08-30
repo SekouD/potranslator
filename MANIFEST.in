@@ -11,4 +11,6 @@ recursive-exclude * *.py[co]
 
 recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
 
-include mlconjug/supported_languages.json
+include potranslator/supported_languages.json
+
+recursive-include potranslator/locale_dir *
