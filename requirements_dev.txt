@@ -9,7 +9,7 @@ Sphinx==1.8.0
 twine==1.11.0
 Click>=6.0
 path.py==11.3.0
-pytest==3.8.0
+pytest==3.8.1
 pytest-runner==4.2
 https://github.com/SekouD/potranslator/raw/dev/dependecy_wheels/importlib_resources-1.0.1-py2.py3-none-any.whl
 
