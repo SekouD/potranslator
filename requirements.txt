@@ -1,5 +1,5 @@
 googletrans==2.3.0
 polib==1.1.0
 Click>=6.0
-path.py==11.3.0
+path.py==11.4.1
 https://github.com/SekouD/potranslator/raw/dev/dependecy_wheels/importlib_resources-1.0.1-py2.py3-none-any.whl
