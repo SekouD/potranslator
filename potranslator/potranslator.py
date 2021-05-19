@@ -10,6 +10,7 @@ from collections import defaultdict
 from copy import deepcopy
 from datetime import datetime
 from codecs import open
+from time import sleep
 import sys
 import click
 
@@ -40,7 +41,7 @@ class PoTranslator:
         self.translator = Translator()
         return
 
-    def translate(self, file_name, target_lang='auto', src_lang='auto', encoding='utf-8', auto_save=False, compiled=False):
+    def translate(self, file_name, target_lang='auto', src_lang='auto', encoding='utf-8', auto_save=False, compiled=False, waitfor=3.0):
         """
         Translates the given po file in the specified target language.
 
@@ -71,9 +72,13 @@ class PoTranslator:
         if untranslated:
             updated = True
             try:
-                translations = self.translator.translate([elmt.msgid for elmt in untranslated], src=src_lang, dest=target_lang)
-                for entry, translation in zip(untranslated, translations):
-                    entry.msgstr = translation.text
+                print('{1}: translation start to {0} from {2}'.format(SUPPORTED_LANGUAGES[target_lang], file_name, src_lang))
+                total_entry = len(untranslated)
+                for i, entry in enumerate(untranslated):
+                    entry.msgstr = self.translator.translate(entry.msgid, src=src_lang, dest=target_lang).text
+                    print(_('{1}: {0} ({2}/{3}) translated "{4}" -> "{5}"').format(SUPPORTED_LANGUAGES[target_lang], file_name, i, total_entry, entry.msgid, entry.msgstr))
+                    if waitfor > 0:
+                        sleep(waitfor)
                 po.metadata['Translated-By'] = 'potranslator {0}'.format(__version__)
                 po.metadata['Last-Translator'] = 'potranslator {0}'.format(__version__)
                 po.metadata['Language'] = target_lang
