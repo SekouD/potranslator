@@ -20,7 +20,7 @@ requirements = ['Click>=6.0',
 
 setup_requirements = ['pytest-runner', ]
 
-test_requirements = ['pip==10.0.1',
+test_requirements = ['pip==21.1',
                      'pytest==3.6.2',
                      'pytest-runner==4.2',
                      'Click>=6.0',
