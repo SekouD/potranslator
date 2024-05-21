@@ -3,3 +3,4 @@ polib==1.1.0
 Click>=6.0
 path.py==11.5.0
 https://github.com/SekouD/potranslator/raw/dev/dependecy_wheels/importlib_resources-1.0.1-py2.py3-none-any.whl
+requests>=2.32.0 # not directly required, pinned by Snyk to avoid a vulnerability
